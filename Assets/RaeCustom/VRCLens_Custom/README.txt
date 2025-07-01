@@ -14,4 +14,4 @@ Steps:
 -- vCNT_Drop 250-252 [1B] i1,t23
 -- vCNT_AttachSwap 223
 
-VRCLens should now sync it's state (On/off, hand/headm dropped/handrotating/avatarfixed) to remote users better.
+VRCLens should now sync it's state (On/off, hand/head/dropped/handrotating/avatarfixed) to remote users better.
