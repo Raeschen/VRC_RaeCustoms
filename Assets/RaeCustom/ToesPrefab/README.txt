@@ -2,7 +2,7 @@ This is a lil prefab to allow you to curl/spread your paws depending on the angl
 
 Curl ankle down, the paws close up. curl ankle up, the paw digits spread. Side to side is also possible and included
 
-Requirements:
+PREREQUISITES:
 VRCfury
 
 Features:

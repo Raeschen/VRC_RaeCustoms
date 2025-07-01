@@ -1,5 +1,9 @@
 An Alteration to make VRCLens sync to remote players more securely.
 
+PREREQUISITES:
+-VRCLens (v1.9.2)
+-VRCFury
+
 Steps:
 - Use VRCLens as normal, add it to an avatar
 - After adding, add the "RaeCustom_VRCLens_SyncFix" prefab beneath the VRCLens object under your avatar, the one you just added

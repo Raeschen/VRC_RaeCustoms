@@ -2,7 +2,7 @@ Ever wanted to emulate that vibe of foggy breath on a cold morning? Now you can!
 
 This is built to work alongside Pawlygon Facetracking. It is currently not compatible with other types of facetracking probably, but if requested, i can tweak it to work. Just ask!
 
-Requirements:
+PREREQUISITES:
 Pawlygon Facetracking
 VRCFury
 
