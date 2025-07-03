@@ -37,7 +37,8 @@ USAGE:
 -- Change field "Preview Position" to;
 --- If using RearPreview: Vector3(0,0.036,-0.496)
 --- If using TopPreview: Vector3(0,0.234,-0.127)
--- Position the Hand Camera and Head Camera however you wish.
+-- The Preview screen will be tilted incorrectly - This is normal! We'll fix this later.
+-- Position the Hand Camera and Head Camera however you wish. Helpful tip for Head Camera below!
 --- You can place the Camera Prefab under "VRCLens/HeadMountPount" to sample how the headmount will look, BUT DELETE THE CAMERA PREFAB WHEN DONE!
 -- Customise the remaining VRCLens settings and then apply VRCLens
 - After applying VRCLens, look for the VRCLens Prefab under your avatar's root.
@@ -62,5 +63,7 @@ Steps:
 -- vCNT_Base 225/254/255 i5
 -- vCNT_Drop 250-252 [1B] i1,t23
 -- vCNT_AttachSwap 223
+
+Note: This MUST BE REPEATED when re-applying VRCLens! VRCLens will re-add the layers and remove the syncfix prefab when re-applying.
 
 VRCLens should now sync it's state (On/off, hand/head/dropped/handrotating/avatarfixed) to remote users better.
