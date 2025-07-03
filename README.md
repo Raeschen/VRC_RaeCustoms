@@ -8,7 +8,8 @@ Currently, there is;
 - Generic Toes Control prefab
 - Facetracked foggy breath prefab
 - VRCLens Stream/CamOps addons
-  - DOES NOT CONTAIN any parts of Hirabiki's VRCLens system. You must purchase VRCLens here [https://hirabiki.gumroad.com/l/rpnel](https://hirabiki.gumroad.com/l/rpnel) to make use of it.
+  - DOES NOT CONTAIN any parts of Hirabiki's VRCLens system.
+  - **You must purchase VRCLens here [https://hirabiki.gumroad.com/l/rpnel](https://hirabiki.gumroad.com/l/rpnel) to make use of it.**
   - Contains:
     - "Blue Dragon" Camera:
       - Mesh and Textures (Made by Sierrlen)
