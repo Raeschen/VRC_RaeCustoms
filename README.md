@@ -10,9 +10,9 @@ Currently, there is;
 - VRCLens Stream/CamOps addons
   - DOES NOT CONTAIN any parts of Hirabiki's VRCLens system. You must purchase VRCLens here [https://hirabiki.gumroad.com/l/rpnel](https://hirabiki.gumroad.com/l/rpnel) to make use of it.
   - Contains:
-   - "Blue Dragon" Camera:
-    - Mesh and Textures (Made by Sierrlen)
-    - AudioLink or VideoTexture effect + Tally Light Compatibility - See [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
-   - Sync-Fix addon to improve Sync of camera towards remote users
+    - "Blue Dragon" Camera:
+      - Mesh and Textures (Made by Sierrlen)
+      - AudioLink or VideoTexture effect + Tally Light Compatibility - See [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
+    - Sync-Fix addon to improve Sync of camera towards remote users
 - VRCTally Configurable Custom Controller prefab/template
   - Requires VRCTally made by happyrobot33, found here [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
