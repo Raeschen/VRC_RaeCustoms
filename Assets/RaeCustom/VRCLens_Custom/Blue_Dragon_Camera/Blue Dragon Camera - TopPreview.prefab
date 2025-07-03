@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5793870881938025314
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -341057205491660947, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_Name
+      value: Blue Dragon
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_Name
+      value: Blue Dragon Camera - TopPreview
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961003128464374939, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 412a94f3f718551499162463cc11d798, type: 2}
+    - target: {fileID: 7807484703679989044, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2931ff35049d7a41bfe7fbf4411b2a6, type: 2}
+    - target: {fileID: 7950531837509327314, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      propertyPath: m_Name
+      value: Blue Dragon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 7950531837509327314, guid: 474661b20a2c12d4eb5d3715f6e3bd15, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1650500942921101483}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7143019748135601499}
+  m_SourcePrefab: {fileID: 100100000, guid: 474661b20a2c12d4eb5d3715f6e3bd15, type: 3}
+--- !u!1 &6676198385812772403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 474661b20a2c12d4eb5d3715f6e3bd15,
+    type: 3}
+  m_PrefabInstance: {fileID: 5793870881938025314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1650500942921101483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6676198385812772403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1240.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 7604367031169712137
+  references:
+    version: 2
+    RefIds:
+    - rid: 7604367031169712137
+      type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 4
+        controllers:
+        - controller:
+            version: 1
+            fileID: 0
+            guid: 
+            id: 7c91b7090b0053b4d826e0e14905e9b2|Assets/RaeCustom/VRCLens_Custom/Blue_Dragon_Camera/VRCTally_BlueDragon/VRCTally_CustomControl_BlueDragon.controller
+            objRef: {fileID: 9100000, guid: 7c91b7090b0053b4d826e0e14905e9b2, type: 2}
+          type: 5
+        menus: []
+        prms:
+        - parameters:
+            version: 1
+            fileID: 0
+            guid: 
+            id: 09d85ac19739b614da3d4ae6f7280aea|Assets/RaeCustom/VRCLens_Custom/Blue_Dragon_Camera/VRCTally_BlueDragon/VRCTally_CustomControl_BlueDragon.asset
+            objRef: {fileID: 11400000, guid: 09d85ac19739b614da3d4ae6f7280aea, type: 2}
+        smoothedPrms: []
+        globalParams:
+        - '*'
+        - '!_heartbeat_detect'
+        allNonsyncedAreGlobal: 0
+        ignoreSaved: 0
+        toggleParam: 
+        rootObjOverride: {fileID: 0}
+        rootBindingsApplyToAvatar: 0
+        rewriteBindings: []
+        allowMissingAssets: 0
+        injectSpsDepthParam: 
+        injectSpsVelocityParam: 
+        controller:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        menu:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        parameters:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        submenu: 
+        removePrefixes: []
+        addPrefix: 
+        useSecurityForToggle: 0
+--- !u!114 &7143019748135601499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6676198385812772403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1240.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 7604367031169712170
+  references:
+    version: 2
+    RefIds:
+    - rid: 7604367031169712170
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: VRCTally BlueDragon toggle
+        state:
+          actions: []
+        saved: 1
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 1
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 0
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 0
+        localState:
+          actions: []
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: VRCTally_BlueDragon_Toggle
+        holdButton: 0
+        invertRestLogic: 0
+        expandIntoTransition: 1
