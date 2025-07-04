@@ -35,8 +35,8 @@ USAGE:
 -- Change field "Camera Scale" to 1
 -- Change field "Preview Scale" to 0.155
 -- Change field "Preview Position" to;
---- If using RearPreview: Vector3(0,0.036,-0.496)
---- If using TopPreview: Vector3(0,0.234,-0.127)
+--- If using RearPreview: Vector3(0,0.0357,-0.515)
+--- If using TopPreview: Vector3(0,0.233,-0.147)
 -- The Preview screen will be tilted incorrectly - This is normal! We'll fix this later.
 -- Position the Hand Camera and Head Camera however you wish. Helpful tip for Head Camera below!
 --- You can place the Camera Prefab under "VRCLens/HeadMountPount" to sample how the headmount will look, BUT DELETE THE CAMERA PREFAB WHEN DONE!
