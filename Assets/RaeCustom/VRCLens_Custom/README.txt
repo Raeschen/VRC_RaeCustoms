@@ -16,7 +16,7 @@ Note: "Vector3()" values can be directly copied and pasted into XYZ fields to fi
 ====================================================================
 
 INFO:
-1680 Tris
+Top:1458, Rear:1466 Tris
 1 Material
 Preconfigured Prefabs for VRCTally + shaders
 
