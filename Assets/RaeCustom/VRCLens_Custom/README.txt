@@ -14,6 +14,13 @@ Each part is optional and not reliant on other parts.
 
 Note: "Vector3()" values can be directly copied and pasted into XYZ fields to fill all three values at once.
 
+QUICK CHECKLIST IF UPDATING/REAPPLYING VRCLENS AFTER ADDING THESE ADDONS:
+> Re-set GameObject <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase Rotation X to 41 ( Vector3(41,0,0) )
+> Make sure all addon prefabs exist
+> Re-check Avatar Base FX layer - Remove all layers corresponding to addons (SyncFix:Step 5, SmoothZoom: Step 5)
+
+
+INSTALLATION:
 ====================================================================
 ======================= BLUE DRAGON CAMERA =========================
 ====================================================================
@@ -50,7 +57,7 @@ USAGE:
 2.7.1) You can place the Camera Prefab under "VRCLens/HeadMountPoint" to sample how the headmount will look, BUT DELETE THE CAMERA PREFAB WHEN DONE!
 2.8) Customise the remaining VRCLens settings (See SMOOTH ZOOM step 1 if using, NOW before applying!) and then apply VRCLens
 3) After applying VRCLens, look for the VRCLens Prefab under your avatar's root.
-3.1) Navigate to YourAvatar/VRCLens/WorldC/CamPickupAlways/PreviewBase
+3.1) Navigate to <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase
 3.2) Alter PreviewBase's Rotation to: Vector3(41,0,0)
 
 Done! Either upload, or move on to SYNC FIX below.
@@ -107,4 +114,4 @@ Steps:
 
 Note: This MUST BE REPEATED when re-applying VRCLens! VRCLens will re-add the layers and remove the syncfix prefab when re-applying.
 
-VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom
+VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom) much more smoothly
