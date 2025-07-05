@@ -13,8 +13,9 @@ Currently, there is;
   - Contains:
     - "Blue Dragon" Camera:
       - Mesh and Textures (Made by Sierrlen)
-      - AudioLink or VideoTexture effect + Tally Light Compatibility - See [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
+      - AudioLink and VideoTexture effect + Tally Light Compatibility - See [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
     - Sync-Fix addon to improve Sync of camera towards remote users
+    - Zoom smoothing addon to make zooming the camera less jittery/abrupt
 - VRCTally Configurable Custom Controller prefab/template
   - Makes it a little easier to drive anything that can go in an animation alongside VRCTally states.
   - Requires VRCTally made by happyrobot33, found here [https://github.com/Happyrobot33/VRCTally](https://github.com/Happyrobot33/VRCTally)
