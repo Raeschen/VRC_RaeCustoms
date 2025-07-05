@@ -10,6 +10,7 @@ Currently, there is;
 - VRCLens Stream/CamOps addons
   - DOES NOT CONTAIN any parts of Hirabiki's VRCLens system.
   - **You must purchase VRCLens here [https://hirabiki.gumroad.com/l/rpnel](https://hirabiki.gumroad.com/l/rpnel) to make use of it.**
+  - Addon is built for VRCLens v1.9.2
   - Contains:
     - "Blue Dragon" Camera:
       - Mesh and Textures (Made by Sierrlen)
