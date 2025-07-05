@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blue Dragon TopPreview Poiyomi+Tally+AL
-  m_Shader: {fileID: 4800000, guid: 9376a6806d9d603468e41dfbdfc80b97, type: 3}
+  m_Name: Blue Dragon RearPreview Poiyomi+Tally+AL+VidTex
+  m_Shader: {fileID: 4800000, guid: a8df1fdc828206a459923a7e0c5cc099, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,7 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 641ad0c8804136e42b5bb37882d7ae09,c69df957434b9e3468140023ab5fd99b
+    AllLockedGUIDS: 6a2eea1af3f464d46942d9cdcd4e9357,d35fdefc5e21dac429903a8c11ffae8a
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 104003ab15a9f7a47b6ef0597225e771
     RenderType: Opaque
@@ -40,12 +40,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AnisotropyMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: daed4ec2727bf1b4e8d8ccb429a6d1f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
+    - _DecalMask:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTexture:
+        m_Texture: {fileID: 2800000, guid: 5820f19d90c86594bbef6b8600bb9efe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: d551b2c02e72ce742983bb3f9ae785fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap1:
@@ -53,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask:
-        m_Texture: {fileID: 2800000, guid: 3e6498ccf7d62c047970f6dad4280c7a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask1:
@@ -73,7 +85,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LightingAOMaps:
-        m_Texture: {fileID: 2800000, guid: 4e9be2f2b337ab04f9da8de9ffb5120e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7936deee8c88ff3499fd28c18b28e48b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LightingDetailShadowMaps:
@@ -109,7 +121,7 @@ Material:
     - _2nd_ShadeMapUV: 0
     - _ALDecalBandClipMax: 1
     - _ALDecalBandClipMin: 0
-    - _ALDecalBandStep: 15
+    - _ALDecalBandStep: 10
     - _ALDecalBaseBoost: 5
     - _ALDecalBlendAlpha: 1
     - _ALDecalBlendType: 0
@@ -135,7 +147,7 @@ Material:
     - _ALDecalVolumeColorLowThemeIndex: 0
     - _ALDecalVolumeColorMidThemeIndex: 0
     - _ALDecalVolumeColorSource: 1
-    - _ALDecalVolumeStep: 30
+    - _ALDecalVolumeStep: 10
     - _ALHighEmission: 0
     - _ALLowEmission: 0
     - _ALMidEmission: 0
@@ -222,6 +234,9 @@ Material:
     - _AnisoReplace: 0
     - _AnisoUseBaseColor: 0
     - _AnisoUseLightColor: 1
+    - _Anisotropy: 0
+    - _AnisotropyMapChannel: 0
+    - _AnisotropyMapUV: 0
     - _Ap_Rim2Light_FeatherOff: 0
     - _Ap_Rim2Light_Power: 0.1
     - _Ap_RimLight_FeatherOff: 0
@@ -477,8 +492,8 @@ Material:
     - _Decal0TPSMaskStrength: 1
     - _Decal0UseDecalAlpha: 0
     - _Decal0VideoAspectFix: 0
-    - _Decal0VideoEmissionStrength: 0
-    - _Decal0VideoEnabled: 0
+    - _Decal0VideoEmissionStrength: 0.5
+    - _Decal0VideoEnabled: 1
     - _Decal0VideoFitToScale: 1
     - _Decal1ApplyGlobalMaskBlendType: 0
     - _Decal1ApplyGlobalMaskIndex: 0
@@ -550,7 +565,7 @@ Material:
     - _DecalBlendAlpha1: 1
     - _DecalBlendAlpha2: 1
     - _DecalBlendAlpha3: 1
-    - _DecalBlendType: 0
+    - _DecalBlendType: 8
     - _DecalBlendType1: 0
     - _DecalBlendType2: 0
     - _DecalBlendType3: 0
@@ -558,11 +573,11 @@ Material:
     - _DecalColor2ThemeIndex: 0
     - _DecalColor3ThemeIndex: 0
     - _DecalColorThemeIndex: 0
-    - _DecalEmissionStrength: 0
+    - _DecalEmissionStrength: 0.5
     - _DecalEmissionStrength1: 0
     - _DecalEmissionStrength2: 0
     - _DecalEmissionStrength3: 0
-    - _DecalEnabled: 0
+    - _DecalEnabled: 1
     - _DecalEnabled1: 0
     - _DecalEnabled2: 0
     - _DecalEnabled3: 0
@@ -595,7 +610,7 @@ Material:
     - _DecalOverrideAlpha1: 0
     - _DecalOverrideAlpha2: 0
     - _DecalOverrideAlpha3: 0
-    - _DecalRotation: 0
+    - _DecalRotation: 180
     - _DecalRotation1: 0
     - _DecalRotation2: 0
     - _DecalRotation3: 0
@@ -844,7 +859,7 @@ Material:
     - _EmissionScrollingVertexColor1: 0
     - _EmissionScrollingVertexColor2: 0
     - _EmissionScrollingVertexColor3: 0
-    - _EmissionStrength: 0.5
+    - _EmissionStrength: 1
     - _EmissionStrength1: 0
     - _EmissionStrength1_BlueDragonRearPreviewPoiyomi2BTally2BAL: 0
     - _EmissionStrength1_BlueDragonTopPreviewPoiyomi2BTally2BAL: 0
@@ -953,6 +968,7 @@ Material:
     - _FogStartOffset: 0
     - _ForceFlatRampedLightmap: 1
     - _ForgotToLockMaterial: 1
+    - _GGXAnisotropics: 0
     - _GITDEMaxEmissionMultiplier: 0
     - _GITDEMaxEmissionMultiplier1: 0
     - _GITDEMaxEmissionMultiplier2: 0
@@ -1894,6 +1910,7 @@ Material:
     - _RedTextureUV: 0
     - _RefSpecFresnelStrength: 0.5
     - _Reflectance: 0.04
+    - _ReflectionAnisotropicStretch: 1
     - _ReflectionApplyTransparency: 1
     - _ReflectionBlendMode: 1
     - _ReflectionCubeEnableLighting: 1
@@ -2058,6 +2075,7 @@ Material:
     - _RimTexUV: 0
     - _RimVRParallaxStrength: 1
     - _RimWidth: 0.8
+    - _RoughnessAnisotropy: 1
     - _SDFBlur: 0.1
     - _SDFShadingTextureUV: 0
     - _SSIgnoreCastedShadows: 0
@@ -2579,7 +2597,7 @@ Material:
     - m_start_Decal2AudioLink: 0
     - m_start_Decal3: 0
     - m_start_Decal3AudioLink: 0
-    - m_start_DecalSection: 0
+    - m_start_DecalSection: 1
     - m_start_DepthBulge: 0
     - m_start_DetailOptions: 0
     - m_start_DistortionAudioLink: 0
@@ -2656,7 +2674,7 @@ Material:
     - m_start_WorldAOBlocker: 0
     - m_start_alphaBlending: 0
     - m_start_audioLink: 0
-    - m_start_audioLinkOverrides: 0
+    - m_start_audioLinkOverrides: 1
     - m_start_backFace: 0
     - m_start_backlight: 0
     - m_start_blending: 0
@@ -2907,6 +2925,7 @@ Material:
     - s_end_decal_position: 0
     - s_end_deliot: 0
     - s_end_fogOpt: 1
+    - s_end_ggxanisotropics: 0
     - s_end_heightFogOpt: 1
     - s_end_hextile: 0
     - s_end_liltoon_rim2_lightdir: 0
@@ -2949,7 +2968,7 @@ Material:
     - s_start_Decal0ChannelSeparation: 0
     - s_start_Decal0GlobalMasking: 0
     - s_start_Decal0HueShift: 0
-    - s_start_Decal0Video: 0
+    - s_start_Decal0Video: 1
     - s_start_Decal1ChannelSeparation: 0
     - s_start_Decal1GlobalMasking: 0
     - s_start_Decal1HueShift: 0
@@ -3120,6 +3139,7 @@ Material:
     - s_start_decal_position: 1
     - s_start_deliot: 0
     - s_start_fogOpt: 1
+    - s_start_ggxanisotropics: 0
     - s_start_heightFogOpt: 1
     - s_start_hextile: 0
     - s_start_liltoon_rim2_lightdir: 0
@@ -3145,8 +3165,8 @@ Material:
     - _ALDecalVolumeColorLow: {r: 0, g: 0, b: 1, a: 1}
     - _ALDecalVolumeColorMid: {r: 0, g: 1, b: 0, a: 1}
     - _ALDecaldCircleDimensions: {r: 0, g: 1, b: 0, a: 1}
-    - _ALUVPosition: {r: 0.1, g: 0.525, b: 1, a: 1}
-    - _ALUVScale: {r: 0.1, g: 0.1, b: 0.1, a: 0.145}
+    - _ALUVPosition: {r: 0.1, g: 0.48, b: 1, a: 1}
+    - _ALUVScale: {r: 0.1, g: 0.1, b: 0.05, a: 0.05}
     - _ALVolumeColorHigh: {r: 1, g: 0, b: 0, a: 1}
     - _ALVolumeColorLow: {r: 0, g: 0, b: 1, a: 1}
     - _ALVolumeColorMid: {r: 0, g: 1, b: 0, a: 1}
@@ -3158,6 +3178,7 @@ Material:
     - _Aniso0Tint: {r: 1, g: 1, b: 1, a: 1}
     - _Aniso1Tint: {r: 1, g: 1, b: 1, a: 1}
     - _AnisoColorMapPan: {r: 0, g: 0, b: 0, a: 0}
+    - _AnisotropyMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _Ap_Rim2LightColor: {r: 1, g: 1, b: 1, a: 1}
     - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
     - _AudioLinkBandOverrideSliders: {r: 0, g: 0, b: 0, a: 0}
@@ -3250,11 +3271,11 @@ Material:
     - _DecalColor2: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor3: {r: 1, g: 1, b: 1, a: 1}
     - _DecalMaskPan: {r: 0, g: 0, b: 0, a: 0}
-    - _DecalPosition: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _DecalPosition: {r: 0.0965, g: 0.545, b: 0, a: 0}
     - _DecalPosition1: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _DecalPosition2: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _DecalPosition3: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _DecalScale: {r: 1, g: 1, b: 1, a: 0}
+    - _DecalScale: {r: 0.11, g: 0.061875, b: 1, a: 0}
     - _DecalScale1: {r: 1, g: 1, b: 1, a: 0}
     - _DecalScale2: {r: 1, g: 1, b: 1, a: 0}
     - _DecalScale3: {r: 1, g: 1, b: 1, a: 0}
