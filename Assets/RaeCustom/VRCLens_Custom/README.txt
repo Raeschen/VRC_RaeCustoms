@@ -70,8 +70,8 @@ Done! Either upload, or move on to SYNC FIX below.
 An Alteration to make VRCLens sync to remote players more securely.
 
 INFO:
-- +5 synced parameter bits to facilitate sync
-- Fixed sync includes State (On/off/inhand/onhead/dropped/handrotating)
+- +6 synced parameter bits to facilitate sync
+- Fixed sync includes State (On/off/inhand/onhead/dropped/handrotating/lens hidden/lens shown)
 - Fixed sync DOES NOT include dropped POSITION or drone-fly POSITION. World-dropped position will desync to remote users that late-load you. This is a VRChat limitation.
 - Current version designed for VRCLens v1.9.2
 
@@ -84,6 +84,7 @@ Steps:
 5.1) vCNT_Base 225/254/255 i5
 5.2) vCNT_Drop 250-252 [1B] i1,t23
 5.3) vCNT_AttachSwap 223
+5.4) vCNT_StealthLens 225
 
 Note: This MUST BE REPEATED when re-applying VRCLens! VRCLens will re-add the layers and remove the syncfix prefab when re-applying.
 

@@ -64,7 +64,7 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 0d624542b03286e41a059e312bfe71b7|Assets/RaeCustom/VRCLens_Custom/RaeCustom_VRCLens_SyncFix_FX.controller
+            id: 0d624542b03286e41a059e312bfe71b7|Assets/RaeCustom/VRCLens_Custom/SyncFix/RaeCustom_VRCLens_SyncFix_FX.controller
             objRef: {fileID: 9100000, guid: 0d624542b03286e41a059e312bfe71b7, type: 2}
           type: 5
         menus: []
@@ -73,7 +73,7 @@ MonoBehaviour:
             version: 1
             fileID: 0
             guid: 
-            id: 9ebc6e98057dfc64ba7a535c9f4eb55e|Assets/RaeCustom/VRCLens_Custom/RaeCustom_VRCLens_SyncFix_Params.asset
+            id: 9ebc6e98057dfc64ba7a535c9f4eb55e|Assets/RaeCustom/VRCLens_Custom/SyncFix/RaeCustom_VRCLens_SyncFix_Params.asset
             objRef: {fileID: 11400000, guid: 9ebc6e98057dfc64ba7a535c9f4eb55e, type: 2}
         smoothedPrms: []
         globalParams:
