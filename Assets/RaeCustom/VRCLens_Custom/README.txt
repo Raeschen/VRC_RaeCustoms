@@ -12,7 +12,7 @@ NOTES:
 -- VRCLens "Smooth zoom" tweak
 - Each part is optional and not reliant on other parts.
 - "Vector3()" values can be directly copied and pasted into XYZ fields to fill all three values at once.
-- Usage of VRCFury "Parameter Compressor" is RECOMMENDED to save sync-bits without having to remove stuff.
+- Usage of VRCFury "Parameter Compressor" is fine and shouldn't cause issues. Recommended if you're low on synced parameters
 
 
 QUICK CHECKLIST IF UPDATING/REAPPLYING VRCLENS AFTER ADDING THESE ADDONS:
@@ -27,7 +27,8 @@ INSTALLATION:
 ====================================================================
 
 INFO:
-Top:1458, Rear:1466 Tris
+Top-preview mesh:1458 Tris
+Rear-preview mesh:1466 Tris
 1 Material
 Preconfigured Prefabs for VRCTally + shaders
 
@@ -48,7 +49,7 @@ USAGE:
 2) In the VRC Lens Setup Script;
 2.1) Change the Camera Model to Blue Dragon Camera, either RearPreview (Preview screen on rear) or TopPreview(Preview screen on top)
 2.2) Click "Change Camera Model"
-2.3) Change field "Camera Scale" to 1
+2.3) Change field "Camera Scale" to 1 (Or whatever you want)
 2.4) Change field "Preview Scale" to 0.155
 2.5) Change field "Preview Position" to;
 2.5.1) If using RearPreview: Vector3(0,0.0357,-0.515)
@@ -61,14 +62,14 @@ USAGE:
 3.1) Navigate to <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase
 3.2) Alter PreviewBase's Rotation to: Vector3(41,0,0)
 
-Done! Either upload, or move on to SYNC FIX below.
+Done! Either upload, or move on to other addons below.
 
 
 ====================================================================
 ============================ SYNC FIX ==============================
 ====================================================================
 
-An Alteration to make VRCLens sync to remote players more securely.
+An Alteration to make VRCLens sync to remote players more reliably.
 
 INFO:
 - +6 synced parameter bits to facilitate sync
@@ -87,7 +88,7 @@ Steps:
 5.3) vCNT_AttachSwap 223
 5.4) vCNT_StealthLens 225
 
-Note: This MUST BE REPEATED when re-applying VRCLens! VRCLens will re-add the layers and remove the syncfix prefab when re-applying.
+Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 
 VRCLens should now sync it's state to remote users better.
 
@@ -116,6 +117,6 @@ Steps:
 5) Delete the following animator layer(s);
 5.1) vCNR_Zoom
 
-Note: This MUST BE REPEATED when re-applying VRCLens! VRCLens will re-add the layers and remove the syncfix prefab when re-applying.
+Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 
-VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom) much more smoothly
+VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom) much more smoothly.
