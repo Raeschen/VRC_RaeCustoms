@@ -5,14 +5,15 @@ PREREQUISITES:
 -VRCFury
 -Poiyomi's Toon Shader
 
-This pack consists of three parts;
-- VRCLens "Blue Dragon" Camera model with Tally Light
-- VRCLens "Sync Fix" tweak
-- VRCLens "Smooth zoom" tweak
+NOTES:
+- This pack consists of three parts;
+-- VRCLens "Blue Dragon" Camera model with Tally Light
+-- VRCLens "Sync Fix" tweak
+-- VRCLens "Smooth zoom" tweak
+- Each part is optional and not reliant on other parts.
+- "Vector3()" values can be directly copied and pasted into XYZ fields to fill all three values at once.
+- Usage of VRCFury "Parameter Compressor" is RECOMMENDED to save sync-bits without having to remove stuff.
 
-Each part is optional and not reliant on other parts.
-
-Note: "Vector3()" values can be directly copied and pasted into XYZ fields to fill all three values at once.
 
 QUICK CHECKLIST IF UPDATING/REAPPLYING VRCLENS AFTER ADDING THESE ADDONS:
 > Re-set GameObject <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase Rotation X to 41 ( Vector3(41,0,0) )
