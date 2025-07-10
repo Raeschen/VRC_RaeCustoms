@@ -1,8 +1,16 @@
 This is for creation of your own custom avatar actions in response to the various states of the VRCTally system
-Customise the various "VRCTally_CustomControl_*" Animations to drive whatever material/material properties/animations/ect you want.
-Then, simply add the "VRCTally_CustomControl" prefab to your avatar's root. 
-VRCFury required.
 
+PREREQUISITES:
+- VRCFury
+
+
+USAGE:
+- Customise the various "VRCTally_CustomControl_*" Animations to drive whatever material/material properties/animations/ect you want.
+- Add the "VRCTally_CustomControl" prefab to your avatar's root. 
+- Done! Note there is a main toggle to enable/disable the system - default off. Under your root menu by default - feel free to move it.
+
+
+ANIMS:
 VRCTally_CustomControl_Disabled
 - Empty animation for the system toggle off state. Leave empty.
 
