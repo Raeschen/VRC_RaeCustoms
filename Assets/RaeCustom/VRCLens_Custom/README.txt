@@ -62,6 +62,7 @@ USAGE:
 3.1) Navigate to <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase
 3.2) Alter PreviewBase's Rotation to: Vector3(41,0,0)
 
+Tally light toggle is under menu path: VRCLens/Custom/VRCTally
 Done! Either upload, or move on to other addons below.
 
 
@@ -119,4 +120,25 @@ Steps:
 
 Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 
+Smooth zoom radial is under menu path: VRCLens/Custom
 VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom) much more smoothly.
+
+
+====================================================================
+=========================== EXTRA TIPS =============================
+====================================================================
+
+- Want the Camera's preview to stay stuck to the camera mesh instead of your hand? 
+-- Navigate to GameObject: <avatar>/VRCLens/WorldC/CamPickupAlways
+-- Add a source to the Parent Constaint on this object (Below source DynVR)
+-- Set the source to: <avatar>/VRCLens/WorldC/CamPickup/CamBase/CamObject
+-- Set the source strength value of "DynVR" to 0
+-- Set the source strength value of "CamObject" to 1
+
+- Want to customise the VRCLens menu some? Place all your favorite/most used functions in the same menu?
+-- You can use menu path VRCLens/Custom if you wish (This is used for VRCTally toggles/Smoothzoom)
+-- You can add customisation ontop of the smoothzoom or syncfix prefabs on your avatar root if you wish
+-- Add a VRCFury "Move or Rename Menu item" component.
+-- Hit "Select" under "From Path" - find your target setting
+-- Hit "Select" under "To Path" - Target your custom location (e.g. VRCLens/Custom) 
+-- Add more of these components for each menu button you want to shortcut to.

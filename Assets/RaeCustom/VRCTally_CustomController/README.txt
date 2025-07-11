@@ -7,7 +7,8 @@ PREREQUISITES:
 USAGE:
 - Customise the various "VRCTally_CustomControl_*" Animations to drive whatever material/material properties/animations/ect you want.
 - Add the "VRCTally_CustomControl" prefab to your avatar's root. 
-- Done! Note there is a main toggle to enable/disable the system - default off. Under your root menu by default - feel free to move it.
+- Tally light toggle is under menu path: VRCLens/Custom/VRCTally (Defaults to Off)
+- Done!
 
 
 ANIMS:

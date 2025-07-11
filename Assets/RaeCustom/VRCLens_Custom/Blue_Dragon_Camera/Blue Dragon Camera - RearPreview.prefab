@@ -198,7 +198,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: VRCTally BlueDragon toggle
+        name: ' VRCLens /Custom/VRCTally/VRCTally BlueDragon toggle'
         state:
           actions: []
         saved: 1
