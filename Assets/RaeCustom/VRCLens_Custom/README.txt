@@ -19,6 +19,7 @@ QUICK CHECKLIST IF UPDATING/REAPPLYING VRCLENS AFTER ADDING THESE ADDONS:
 > Re-set GameObject <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase Rotation X to 41 ( Vector3(41,0,0) )
 > Make sure all addon prefabs exist
 > Re-check Avatar Base FX layer - Remove all layers corresponding to addons (SyncFix:Step 5, SmoothZoom: Step 5)
+> Re-check any tips that need repeating on reapplying VRCLens
 
 
 INSTALLATION:
@@ -128,13 +129,16 @@ VRCLens should now zoom (Both with zoom buttons and with the zoom radial under V
 =========================== EXTRA TIPS =============================
 ====================================================================
 
+1) Parent preview screen to Camera instead of Hand
 - Want the Camera's preview to stay stuck to the camera mesh instead of your hand? 
 -- Navigate to GameObject: <avatar>/VRCLens/WorldC/CamPickupAlways
--- Add a source to the Parent Constaint on this object (Below source DynVR)
+-- Add a source to the existing Parent Constraint on this object (Below source DynVR)
 -- Set the source to: <avatar>/VRCLens/WorldC/CamPickup/CamBase/CamObject
 -- Set the source strength value of "DynVR" to 0
 -- Set the source strength value of "CamObject" to 1
+Done! If you reapply VRCLens, these steps must be repeated!
 
+2) Customise the VRCLens Menu nondestructively
 - Want to customise the VRCLens menu some? Place all your favorite/most used functions in the same menu?
 -- You can use menu path VRCLens/Custom if you wish (This is used for VRCTally toggles/Smoothzoom)
 -- You can add customisation ontop of the smoothzoom or syncfix prefabs on your avatar root if you wish
@@ -142,3 +146,4 @@ VRCLens should now zoom (Both with zoom buttons and with the zoom radial under V
 -- Hit "Select" under "From Path" - find your target setting
 -- Hit "Select" under "To Path" - Target your custom location (e.g. VRCLens/Custom) 
 -- Add more of these components for each menu button you want to shortcut to.
+Done!
