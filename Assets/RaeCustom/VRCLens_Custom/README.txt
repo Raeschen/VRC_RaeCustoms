@@ -149,7 +149,7 @@ Done! If you reapply VRCLens, these steps must be repeated!
 Done!
 
 3) Make the VR Hud preview of VRCLens render infront of everything (Prevent occlusion)
-- Want the VRCLens preview to stop being occluded by anything wandering infront of it? 
+- Want the VRCLens HUD preview to stop being occluded by anything wandering infront of it? 
 -- Navigate to the file; "Assets/Hirabiki/VRCLens/Resource/DepthOfFieldMeshPreview.shader"
 -- Open this file in any text editor
 -- Find the following section in the shader (Around Line 106);
