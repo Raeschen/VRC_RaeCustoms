@@ -147,3 +147,42 @@ Done! If you reapply VRCLens, these steps must be repeated!
 -- Hit "Select" under "To Path" - Target your custom location (e.g. VRCLens/Custom) 
 -- Add more of these components for each menu button you want to shortcut to.
 Done!
+
+3) Make the VR Hud preview of VRCLens render infront of everything (Prevent occlusion)
+- Want the VRCLens preview to stop being occluded by anything wandering infront of it? 
+-- Navigate to the file; "Assets/Hirabiki/VRCLens/Resource/DepthOfFieldMeshPreview.shader"
+-- Open this file in any text editor
+-- Find the following section in the shader (Around Line 106);
+
+-------------------- START OF CODE SNIPPET --------------------
+
+		// PASS 3 ---- Should be totally possible to merge with PASS 2
+		// Camera: [NONE] | VR: Head-Up Display
+		Pass
+		{
+			
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			#include "UnityCG.cginc"
+
+-------------------- END OF CODE SNIPPET --------------------
+
+-- Edit this section by adding an extra line (Line 106) and adding "ZTest Always":
+
+-------------------- START OF CODE SNIPPET --------------------
+
+		// PASS 3 ---- Should be totally possible to merge with PASS 2
+		// Camera: [NONE] | VR: Head-Up Display
+		Pass
+		{
+			ZTest Always
+			
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			#include "UnityCG.cginc"
+
+-------------------- END OF CODE SNIPPET --------------------
+
+Done! Save and close the file, and the VR Hud preview should no longer be occluded.
