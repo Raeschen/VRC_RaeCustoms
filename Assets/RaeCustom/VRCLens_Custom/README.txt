@@ -167,7 +167,7 @@ PRECONFIGURE:
 - Choose weather or not you want to sync the controller parameters:
 -- In the asset window, navigate to Assets/RaeCustoms/VRCLens_Custom/OSCController/OSCController_Params
 -- Check (Or Uncheck) the 'Synced' box on every XInput* parameter depending on weather or not you want it to sync
---- DO NOT Unsync "OSCC_on"
+--- DO NOT Unsync any non-XInput parameter (e.g. "OSCC_on" or "OSCC_stab_on")
 --- Warning - this customisation will reset if you reimport a new RaeCustoms unitypackage
 
 
