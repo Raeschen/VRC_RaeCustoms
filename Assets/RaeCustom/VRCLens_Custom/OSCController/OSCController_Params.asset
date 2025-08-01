@@ -10,47 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: RaeCustom_VRCLens_SyncFix_Params
+  m_Name: OSCController_Params
   m_EditorClassIdentifier: 
   isEmpty: 0
   parameters:
-  - name: VRCL_Custom_On
+  - name: OSCC_on
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_CamMode_VR
+  - name: OSCC_stab_on
     valueType: 2
+    saved: 1
+    defaultValue: 0
+    networkSynced: 1
+  - name: XInputLeftThumbStickX
+    valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_Dropped_0
-    valueType: 2
+  - name: XInputLeftThumbStickY
+    valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_Dropped_1
-    valueType: 2
+  - name: XInputRightThumbStickX
+    valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_Dropped_2
-    valueType: 2
+  - name: XInputRightThumbStickY
+    valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_Hidden
-    valueType: 2
+  - name: XInputLeftTrigger
+    valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: VRCL_Custom_HideOverride
-    valueType: 2
+  - name: XInputRightTrigger
+    valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 0
-  - name: VRCL_Custom_UnHideOverride
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-    networkSynced: 0
+    networkSynced: 1

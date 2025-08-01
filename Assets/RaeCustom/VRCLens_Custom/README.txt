@@ -19,6 +19,7 @@ QUICK CHECKLIST IF UPDATING/REAPPLYING VRCLENS AFTER ADDING THESE ADDONS:
 > Re-set GameObject <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase Rotation X to 41 ( Vector3(41,0,0) )
 > Make sure all addon prefabs exist
 > Re-check Avatar Base FX layer - Remove all layers corresponding to addons (SyncFix:Step 5, SmoothZoom: Step 5)
+> Re-check "<avatar>/VRCLens/WorldC/CamPickup/CamBase" Parent Constraint (RootMount and OSCController add sources to this)
 > Re-check any tips that need repeating on reapplying VRCLens
 
 
@@ -123,6 +124,65 @@ Note: Check "Quick Checklist" at the top of this README if you're re-applying VR
 
 Smooth zoom radial is under menu path: VRCLens/Custom
 VRCLens should now zoom (Both with zoom buttons and with the zoom radial under VRCLens/Custom) much more smoothly.
+
+
+====================================================================
+========================== ROOT MOUNT ==============================
+====================================================================
+
+A fully synced 'mount' that sits infront of you, tracks your avatar root, and can be hand-puppetted. 
+
+INFO:
+- Several synced booleans, Parameter-compressable to effectively 0 using VRCFury parameter compressor (Compress bools)
+- Current version designed for VRCLens v1.9.2
+
+Steps:
+1) Add the "RaeCustom_VRCLens_RootMount" prefab under your avatar root. It MUST BE LOWER Than SyncFix on the hierarchy!
+2) Navigate to "<avatar>/VRCLens/WorldC/CamPickup/CamBase"
+3.1) On Object CamBase, Locate the Parent constraint.
+3.1.1) By default, this parent constraint has THREE Sources.
+3.1.2) Add a FOURTH(4th) Source.
+3.1.3) Set the FOURTH(4th) source WEIGHT to 0
+3.1.4) Set the FOURTH(4th) source to "<avatar>/RaeCustom_VRCLens_RootMount/RootMount/RootMount_Offset/RootMount_PhysRoot/RootMount_CamBase"
+4) If you wish to customise the rootmount's mount position, edit the position of "<avatar>/RaeCustom_VRCLens_RootMount/RootMount/RootMount_Offset" to wherever you like.
+
+Done! Access controls in menu path: VRCLens/Custom/RootMount
+
+Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
+
+====================================================================
+========================== OSCControl ==============================
+====================================================================
+
+An alternative to drone mode that allows an OSC video game controller (e.g. Xbox controller) to pilot the cam
+
+INFO:
+- 6 floats if wanting sync (Syncs poorly even with this!), 2 if not (Compressable to 0 with VRCFury parameter - compress bools)
+- Requires a controller to OSC Windows application (e.g. https://github.com/qbitzvr/VRCThumbParamsOSC )
+- Current version designed for VRCLens v1.9.2
+
+
+PRECONFIGURE:
+- Choose weather or not you want to sync the controller parameters:
+-- In the asset window, navigate to Assets/RaeCustoms/VRCLens_Custom/OSCController/OSCController_Params
+-- Check (Or Uncheck) the 'Synced' box on every XInput* parameter depending on weather or not you want it to sync
+--- DO NOT Unsync "OSCC_on"
+
+
+Steps:
+1) Add the "RaeCustom_VRCLens_OSCController" prefab under your avatar root. It MUST BE LOWER Than SyncFix on the hierarchy!
+1.1) If using alongside RootMount, you should avoid turning the two systems on together. The lowest system in the hierarchy should have control priority.
+2) Navigate to "<avatar>/VRCLens/WorldC/CamPickup/CamBase"
+3.1) On Object CamBase, Locate the Parent constraint.
+3.1.1) By default, this parent constraint has THREE Sources. If already using RootMount, it'll have FOUR sources.
+3.1.2) Add a FOURTH(4th) Source (If it doesn't exist) AND a FIFTH(5th) source.
+3.1.3) Set the FOURTH(4th) and FIFTH(5th) source WEIGHT both to 0
+3.1.4) Leave the FOURTH(4th) source either unset or set to RootMount if used.
+3.1.4) Set the FIFTH(5th) source to "<avatar>/RaeCustom_VRCLens_OSCController/OSCC_root/OSCC_Base/OSCC_Control/OSCC_CamBase"
+
+Done! Access controls in menu path: VRCLens/Custom/OSCControl
+
+Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 
 
 ====================================================================
