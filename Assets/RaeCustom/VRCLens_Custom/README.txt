@@ -157,7 +157,7 @@ Note: Check "Quick Checklist" at the top of this README if you're re-applying VR
 An alternative to drone mode that allows an OSC video game controller (e.g. Xbox controller) to pilot the cam
 
 INFO:
-- 6 floats if wanting sync (Syncs poorly even with this!), 2 if not (Compressable to 0 with VRCFury parameter - compress bools)
+- 1 bool + 6 floats if wanting sync (Syncs poorly even with this!), 1 bool if not (Compressable to 0 with VRCFury parameter - compress bools)
 - Requires a controller to OSC Windows application (e.g. https://github.com/qbitzvr/VRCThumbParamsOSC )
 - REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
 - Current version designed for VRCLens v1.9.2
@@ -180,9 +180,9 @@ Steps:
 3.1.2) Add a FOURTH(4th) Source (If it doesn't exist) AND a FIFTH(5th) source.
 3.1.3) Set the FOURTH(4th) and FIFTH(5th) source WEIGHT both to 0
 3.1.4) Leave the FOURTH(4th) source either unset or set to RootMount if used.
-3.1.4) Set the FIFTH(5th) source to "<avatar>/RaeCustom_VRCLens_OSCController/OSCC_root/OSCC_Base/OSCC_Control/OSCC_CamBase"
+3.1.4) Set the FIFTH(5th) source to "<avatar>/RaeCustom_VRCLens_OSCController/OSCC_root/OSCC_Base/OSCC_CamBase"
 
-Done! Access controls in menu path: VRCLens/Custom/OSCControl
+Done! Toggle on with menu path: VRCLens/Custom/OSCControl
 
 Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 

@@ -19,38 +19,33 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: OSCC_stab_on
-    valueType: 2
-    saved: 1
-    defaultValue: 0
-    networkSynced: 1
   - name: XInputLeftThumbStickX
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
   - name: XInputLeftThumbStickY
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
   - name: XInputRightThumbStickX
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
   - name: XInputRightThumbStickY
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
   - name: XInputLeftTrigger
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
   - name: XInputRightTrigger
     valueType: 1
     saved: 0
     defaultValue: 0
-    networkSynced: 1
+    networkSynced: 0
