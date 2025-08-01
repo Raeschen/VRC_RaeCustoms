@@ -159,6 +159,7 @@ An alternative to drone mode that allows an OSC video game controller (e.g. Xbox
 INFO:
 - 6 floats if wanting sync (Syncs poorly even with this!), 2 if not (Compressable to 0 with VRCFury parameter - compress bools)
 - Requires a controller to OSC Windows application (e.g. https://github.com/qbitzvr/VRCThumbParamsOSC )
+- REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
 - Current version designed for VRCLens v1.9.2
 
 
@@ -167,6 +168,7 @@ PRECONFIGURE:
 -- In the asset window, navigate to Assets/RaeCustoms/VRCLens_Custom/OSCController/OSCController_Params
 -- Check (Or Uncheck) the 'Synced' box on every XInput* parameter depending on weather or not you want it to sync
 --- DO NOT Unsync "OSCC_on"
+--- Warning - this customisation will reset if you reimport a new RaeCustoms unitypackage
 
 
 Steps:
@@ -174,7 +176,7 @@ Steps:
 1.1) If using alongside RootMount, you should avoid turning the two systems on together. The lowest system in the hierarchy should have control priority.
 2) Navigate to "<avatar>/VRCLens/WorldC/CamPickup/CamBase"
 3.1) On Object CamBase, Locate the Parent constraint.
-3.1.1) By default, this parent constraint has THREE Sources. If already using RootMount, it'll have FOUR sources.
+3.1.1) By default, this parent constraint has THREE(3) Sources. If already using RootMount, it'll have FOUR(4) sources.
 3.1.2) Add a FOURTH(4th) Source (If it doesn't exist) AND a FIFTH(5th) source.
 3.1.3) Set the FOURTH(4th) and FIFTH(5th) source WEIGHT both to 0
 3.1.4) Leave the FOURTH(4th) source either unset or set to RootMount if used.
