@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 2733240354907435803}
   - component: {fileID: -435946195590045362}
   - component: {fileID: 1379068709096837043}
+  - component: {fileID: 5750056633728751110}
   m_Layer: 0
   m_Name: RaeCustom_VRCLens_OSCController
   m_TagString: Untagged
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1240.0
+  vrcfuryVersion: 1.1251.0
   somethingIsBroken: 0
   config:
     features: []
@@ -509,7 +510,25 @@ MonoBehaviour:
             guid: 
             id: 2e3855c131ae49147b253a449c67929a|Assets/RaeCustom/VRCLens_Custom/OSCController/OSCController_Params.asset
             objRef: {fileID: 11400000, guid: 2e3855c131ae49147b253a449c67929a, type: 2}
-        smoothedPrms: []
+        smoothedPrms:
+        - name: XInputLeftThumbStickX
+          smoothingDuration: 0.6
+          range: 1
+        - name: XInputLeftThumbStickY
+          smoothingDuration: 0.6
+          range: 1
+        - name: XInputRightThumbStickX
+          smoothingDuration: 0.6
+          range: 1
+        - name: XInputRightThumbStickY
+          smoothingDuration: 0.6
+          range: 1
+        - name: XInputLeftTrigger
+          smoothingDuration: 0.6
+          range: 0
+        - name: XInputRightTrigger
+          smoothingDuration: 0.6
+          range: 0
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
@@ -560,7 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1240.0
+  vrcfuryVersion: 1.1251.0
   somethingIsBroken: 0
   config:
     features: []
@@ -573,7 +592,7 @@ MonoBehaviour:
       type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 3
-        name: ' VRCLens /Custom/Toggle OSCController'
+        name: ' VRCLens /Custom/OSCControl/Toggle OSCController'
         state:
           actions: []
         saved: 0
@@ -616,6 +635,79 @@ MonoBehaviour:
         defaultSliderValue: 0
         useGlobalParam: 1
         globalParam: OSCC_on
+        holdButton: 0
+        invertRestLogic: 0
+        expandIntoTransition: 1
+--- !u!114 &5750056633728751110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965466460677613441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.1251.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 7514409248216055808
+  references:
+    version: 2
+    RefIds:
+    - rid: 7514409248216055808
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: ' VRCLens /Custom/OSCControl/Toggle Turbospeed'
+        state:
+          actions: []
+        saved: 0
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 0
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 0
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 0
+        localState:
+          actions: []
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: OSCC_turbo
         holdButton: 0
         invertRestLogic: 0
         expandIntoTransition: 1

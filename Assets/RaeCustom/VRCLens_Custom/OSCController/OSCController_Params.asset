@@ -19,6 +19,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: OSCC_turbo
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: XInputLeftThumbStickX
     valueType: 1
     saved: 0
@@ -46,6 +51,11 @@ MonoBehaviour:
     networkSynced: 0
   - name: XInputRightTrigger
     valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: XInputBButton
+    valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0

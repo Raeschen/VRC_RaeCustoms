@@ -159,6 +159,10 @@ An alternative to drone mode that allows an OSC video game controller (e.g. Xbox
 INFO:
 - 1 bool + 6 floats if wanting sync (Syncs poorly even with this!), 1 bool if not (Compressable to 0 with VRCFury parameter - compress bools)
 - Requires a controller to OSC Windows application (e.g. https://github.com/qbitzvr/VRCThumbParamsOSC )
+- Left Thumbstick: Fwd/Backward/Left/Right
+- Right Thumbstick: Pitch/Yaw
+- Left/Right triggers: Up/Down
+- B button: toggle Turbo Speed on/off
 - REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
 - Current version designed for VRCLens v1.9.2
 
@@ -167,7 +171,7 @@ PRECONFIGURE:
 - Choose weather or not you want to sync the controller parameters:
 -- In the asset window, navigate to Assets/RaeCustoms/VRCLens_Custom/OSCController/OSCController_Params
 -- Check (Or Uncheck) the 'Synced' box on every XInput* parameter depending on weather or not you want it to sync
---- DO NOT Unsync any non-XInput parameter (e.g. "OSCC_on" or "OSCC_stab_on")
+--- DO NOT Unsync any non-XInput parameter (e.g. "OSCC_on")
 --- Warning - this customisation will reset if you reimport a new RaeCustoms unitypackage
 
 
