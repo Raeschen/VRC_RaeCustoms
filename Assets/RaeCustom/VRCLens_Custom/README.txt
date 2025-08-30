@@ -158,7 +158,7 @@ An alternative to drone mode that allows an OSC video game controller (e.g. Xbox
 
 INFO:
 - 1 bool + 6 floats if wanting sync (Syncs poorly even with this!), 1 bool if not (Compressable to 0 with VRCFury parameter - compress bools)
-- Requires a controller to OSC Windows application (e.g. https://github.com/qbitzvr/VRCThumbParamsOSC )
+- Requires a controller to OSC Windows application (e.g. https://github.com/I5UCC/VRCThumbParamsOSC )
 - Left Thumbstick: Fwd/Backward/Left/Right
 - Right Thumbstick: Pitch/Yaw
 - Left/Right triggers: Up/Down
