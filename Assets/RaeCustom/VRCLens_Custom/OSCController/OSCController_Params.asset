@@ -60,12 +60,12 @@ MonoBehaviour:
     defaultValue: 0
     networkSynced: 0
   - name: XInputLeftBumper
-    valueType: 1
+    valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
   - name: XInputRightBumper
-    valueType: 1
+    valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
