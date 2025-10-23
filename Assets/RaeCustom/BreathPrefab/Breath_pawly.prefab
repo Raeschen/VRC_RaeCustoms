@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1228.0
+  vrcfuryVersion: 1.1252.0
   somethingIsBroken: 0
   config:
     features: []
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1228.0
+  vrcfuryVersion: 1.1252.0
   somethingIsBroken: 0
   config:
     features: []
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1228.0
+  vrcfuryVersion: 1.1252.0
   somethingIsBroken: 0
   config:
     features: []
@@ -460,7 +460,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.101960786}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.14901961}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
