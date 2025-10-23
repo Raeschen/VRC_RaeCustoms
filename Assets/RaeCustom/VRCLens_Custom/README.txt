@@ -162,6 +162,7 @@ INFO:
 - Left Thumbstick: Fwd/Backward/Left/Right
 - Right Thumbstick: Pitch/Yaw
 - Left/Right triggers: Up/Down
+- Left/Right bumpers: Zoom Out/In
 - B button: toggle Turbo Speed on/off
 - REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
 - Current version designed for VRCLens v1.9.2
