@@ -1,7 +1,7 @@
 VRCLens Streaming/CamOps Addon Pack
 
 PREREQUISITES:
--VRCLens (v1.9.2)
+-VRCLens (v1.10.0)
 -VRCFury
 -Poiyomi's Toon Shader
 
@@ -59,7 +59,7 @@ USAGE:
 2.6) The Preview screen will be tilted incorrectly - This is normal! We'll fix this later.
 2.7) Position the Hand Camera and Head Camera however you wish. Helpful tip for Head Camera below!
 2.7.1) You can place the Camera Prefab under "VRCLens/HeadMountPoint" to sample how the headmount will look, BUT DELETE THE CAMERA PREFAB WHEN DONE!
-2.8) Customise the remaining VRCLens settings (See SMOOTH ZOOM step 1 if using, NOW before applying!) and then apply VRCLens
+2.8) Customise the remaining VRCLens settings and then apply VRCLens
 3) After applying VRCLens, look for the VRCLens Prefab under your avatar's root.
 3.1) Navigate to <avatar>/VRCLens/WorldC/CamPickupAlways/PreviewBase
 3.2) Alter PreviewBase's Rotation to: Vector3(41,0,0)
@@ -77,8 +77,9 @@ An Alteration to make VRCLens sync to remote players more reliably.
 INFO:
 - +6 synced parameter bits to facilitate sync
 - Fixed sync includes State (On/off/inhand/onhead/dropped/handrotating/lens hidden/lens shown)
-- Fixed sync DOES NOT include dropped POSITION or drone-fly POSITION. World-dropped position will desync to remote users that late-load you. This is a VRChat limitation.
-- Current version designed for VRCLens v1.9.2
+- Fixed sync DOES NOT include dropped POSITION or drone-fly POSITION. 
+- World-dropped position will desync to remote users that late-load you. This is a VRChat limitation.
+- Current version designed for VRCLens v1.10.0
 
 Steps:
 1) Use VRCLens as normal, add it to an avatar
@@ -86,10 +87,9 @@ Steps:
 3) Go to your Avatar's root. Check the Avatar Descriptor, navigate to the FX layer assigned.
 4) Open your base FX layer in the Animator tab.
 5) Delete the following animator layer(s);
-5.1) vCNT_Base 225/254/255 i5
-5.2) vCNT_Drop 250-252 [1B] i1,t23
-5.3) vCNT_AttachSwap 223
-5.4) vCNT_StealthLens 225
+5.1) vCNT_Drop 250-252 [1B] i1,t23
+5.2) vCNT_AttachSwap 223
+5.3) vCNT_StealthLens 225
 
 Note: Check "Quick Checklist" at the top of this README if you're re-applying VRCLens! some steps must be repeated.
 
@@ -104,7 +104,7 @@ An Alteration to make VRCLens's Radial Zoom smoothed using VRCFury's parameter s
 
 INFO:
 - 0 Synced bits (Zoom is local only)
-- Current version designed for VRCLens v1.9.2
+- Current version designed for VRCLens v1.10.0
 
 PRECONFIGURE:
 - Feel free to open the ""RaeCustom_VRCLens_SmoothZoom" prefab and edit;
@@ -113,7 +113,7 @@ PRECONFIGURE:
 --- A greater number is more smoothing.
 
 Steps:
-1) On the VRC Lens Setup script, make sure that the "Use Zoom Dial" is UNCHECKED. Import VRCLens.
+1) Import VRCLens (Via Blue Dragon Camera guide if using).
 2) After adding, add the "RaeCustom_VRCLens_SmoothZoom" prefab under your avatar root.
 3) Go to your Avatar's root. Check the Avatar Descriptor, navigate to the FX layer assigned.
 4) Open your base FX layer in the Animator tab.
@@ -134,7 +134,7 @@ A fully synced 'mount' that sits infront of you, tracks your avatar root, and ca
 
 INFO:
 - Several synced booleans, Parameter-compressable to effectively 0 using VRCFury parameter compressor (Compress bools)
-- Current version designed for VRCLens v1.9.2
+- Current version designed for VRCLens v1.10.0
 
 Steps:
 1) Add the "RaeCustom_VRCLens_RootMount" prefab under your avatar root. It MUST BE LOWER Than SyncFix on the hierarchy!
@@ -165,7 +165,7 @@ INFO:
 - Left/Right bumpers: Zoom Out/In
 - B button: toggle Turbo Speed on/off
 - REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
-- Current version designed for VRCLens v1.9.2
+- Current version designed for VRCLens v1.10.0
 
 
 PRECONFIGURE:

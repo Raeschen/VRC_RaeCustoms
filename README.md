@@ -10,5 +10,5 @@ Currently, there is;
 - VRCLens Stream/CamOps addons - [README](Assets/RaeCustom/VRCLens_Custom/README.txt)
   - DOES NOT CONTAIN any parts of Hirabiki's VRCLens system.
   - **You must purchase VRCLens here [https://hirabiki.gumroad.com/l/rpnel](https://hirabiki.gumroad.com/l/rpnel) to make use of it.**
-  - Addon is built for VRCLens v1.9.2
+  - Addon is built for VRCLens v1.10.0
 - ~~VRCTally Configurable Custom Controller prefab/template~~ - this is now merged into [Happy's VRCTally repo](https://github.com/Happyrobot33/VRCTally).
