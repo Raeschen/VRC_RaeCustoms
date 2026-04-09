@@ -2,14 +2,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 {
 	Properties
 	{
-		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.2.69</color>", Float) = 0
+		[HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi 9.3.64</color>", Float) = 0
 		[HideInInspector] shader_is_using_thry_editor ("", Float) = 0
 		[HideInInspector] shader_locale ("0db0b86376c3dca4b9a6828ef8615fe0", Float) = 0
-		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:16},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
-		[HideInInspector] footer_twitter ("{texture:{name:icon-twitter,height:16},action:{type:URL,data:https://twitter.com/poiyomi},hover:TWITTER}", Float) = 0
-		[HideInInspector] footer_patreon ("{texture:{name:icon-patreon,height:16},action:{type:URL,data:https://www.patreon.com/poiyomi},hover:PATREON}", Float) = 0
-		[HideInInspector] footer_discord ("{texture:{name:icon-discord,height:16},action:{type:URL,data:https://discord.gg/Ays52PY},hover:DISCORD}", Float) = 0
-		[HideInInspector] footer_github ("{texture:{name:icon-github,height:16},action:{type:URL,data:https://github.com/poiyomi/PoiyomiToonShader},hover:GITHUB}", Float) = 0
+		[HideInInspector] footer_website ("{texture:{name:icon-poilogo,height:24},action:{type:URL,data:https://www.poiyomi.com},hover:WEBSITE}", Float) = 0
+		[HideInInspector] footer_discord ("{texture:{name:icon-discord,height:24},action:{type:URL,data:https://discord.gg/Ays52PY},hover:DISCORD}", Float) = 0
+		[HideInInspector] footer_patreon ("{texture:{name:icon-patreon-new,height:24},action:{type:URL,data:https://www.patreon.com/poiyomi},hover:PATREON}", Float) = 0
+		[HideInInspector] footer_youtube ("{texture:{name:icon-youtube,height:24},action:{type:URL,data:https://www.youtube.com/poiyomi},hover:YOUTUBE}", Float) = 0
+		[HideInInspector] footer_github ("{texture:{name:icon-github,height:24},action:{type:URL,data:https://github.com/poiyomi/PoiyomiToonShader},hover:GITHUB}", Float) = 0
+		[HideInInspector] footer_bluesky ("{texture:{name:icon-bluesky,height:24},action:{type:URL,data:https://bsky.app/profile/poiyomi.com},hover:BLUESKY}", Float) = 0
+		[HideInInspector] footer_twitter ("{texture:{name:icon-twitter,height:24},action:{type:URL,data:https://x.com/poiyomi},hover:X}", Float) = 0
 		[Header(POIYOMI SHADER UI FAILED TO LOAD)]
 		[Header(.    This is caused by scripts failing to compile. It can be fixed.)]
 		[Header(.          The inspector will look broken and will not work properly until fixed.)]
@@ -76,7 +78,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[HideInInspector] m_end_Alpha ("Alpha Options", Float) = 0
 		[HideInInspector] m_lightingCategory ("Shading", Float) = 0
 		[HideInInspector] m_start_PoiLightData ("Light Data--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/light-data},hover:Documentation}}", Float) = 0
-		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingAOMaps ("AO Maps (expand)--{reference_properties:[_LightingAOMapsPan, _LightingAOMapsUV,_LightDataAOStrengthR,_LightDataAOStrengthG,_LightDataAOStrengthB,_LightDataAOStrengthA, _LightDataAOGlobalMaskR]}", 2D) = "white" { }
+		[TextureKeyword][sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingAOMaps ("AO Maps (expand)--{reference_properties:[_LightingAOMapsPan, _LightingAOMapsUV,_LightDataAOStrengthR,_LightDataAOStrengthG,_LightDataAOStrengthB,_LightDataAOStrengthA, _LightDataAOGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingAOMapsPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingAOMapsUV ("UV", Int) = 0
 		[HideInInspector]_LightDataAOStrengthR ("R Strength", Range(0, 1)) = 1
@@ -85,7 +87,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[HideInInspector]_LightDataAOStrengthA ("A Strength", Range(0, 1)) = 0
 		[HideInInspector][ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _LightDataAOGlobalMaskR ("Global Mask--{reference_property:_LightDataAOGlobalMaskBlendTypeR}", Int) = 0
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _LightDataAOGlobalMaskBlendTypeR ("Blending", Range(0, 1)) = 2
-		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingDetailShadowMaps ("Shadow Map (expand)--{reference_properties:[_LightingDetailShadowMapsPan, _LightingDetailShadowMapsUV,_LightingDetailShadowStrengthR,_LightingDetailShadowStrengthG,_LightingDetailShadowStrengthB,_LightingDetailShadowStrengthA,_LightingAddDetailShadowStrengthR,_LightingAddDetailShadowStrengthG,_LightingAddDetailShadowStrengthB,_LightingAddDetailShadowStrengthA, _LightDataDetailShadowGlobalMaskR]}", 2D) = "white" { }
+		[TextureKeyword][sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingDetailShadowMaps ("Shadow Map (expand)--{reference_properties:[_LightingDetailShadowMapsPan, _LightingDetailShadowMapsUV,_LightingDetailShadowStrengthR,_LightingDetailShadowStrengthG,_LightingDetailShadowStrengthB,_LightingDetailShadowStrengthA,_LightingAddDetailShadowStrengthR,_LightingAddDetailShadowStrengthG,_LightingAddDetailShadowStrengthB,_LightingAddDetailShadowStrengthA, _LightDataDetailShadowGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingDetailShadowMapsPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingDetailShadowMapsUV ("UV", Int) = 0
 		[HideInInspector]_LightingDetailShadowStrengthR ("R Strength", Range(0, 1)) = 1
@@ -98,7 +100,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[HideInInspector]_LightingAddDetailShadowStrengthA ("Additive A Strength", Range(0, 1)) = 0
 		[HideInInspector][ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _LightDataDetailShadowGlobalMaskR ("Global Mask--{reference_property:_LightDataDetailShadowGlobalMaskBlendTypeR}", Int) = 0
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _LightDataDetailShadowGlobalMaskBlendTypeR ("Blending", Range(0, 1)) = 2
-		[sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingShadowMasks ("Shadow Masks (expand)--{reference_properties:[_LightingShadowMasksPan, _LightingShadowMasksUV,_LightingShadowMaskStrengthR,_LightingShadowMaskStrengthG,_LightingShadowMaskStrengthB,_LightingShadowMaskStrengthA, _LightDataShadowMaskGlobalMaskR]}", 2D) = "white" { }
+		[TextureKeyword][sRGBWarning][ThryRGBAPacker(R, G, B, A, Linear, false)]_LightingShadowMasks ("Shadow Masks (expand)--{reference_properties:[_LightingShadowMasksPan, _LightingShadowMasksUV,_LightingShadowMaskStrengthR,_LightingShadowMaskStrengthG,_LightingShadowMaskStrengthB,_LightingShadowMaskStrengthA, _LightDataShadowMaskGlobalMaskR]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightingShadowMasksPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightingShadowMasksUV ("UV", Int) = 0
 		[HideInInspector]_LightingShadowMaskStrengthR ("R Strength", Range(0, 1)) = 1
@@ -111,7 +113,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[Enum(Poi Custom, 0, Standard, 1, UTS2, 2, OpenLit(lil toon), 3)] _LightingColorMode ("Light Color Mode", Int) = 0
 		[Enum(Poi Custom, 0, Normalized NDotL, 1, Saturated NDotL, 2, Casted Shadows Only, 3, SDF, 4)] _LightingMapMode ("Light Map Mode", Int) = 0
 		[HideInInspector] s_start_LightDataSDF ("Signed Distance fields--{persistent_expand:true,default_expand:true, condition_showS:(_LightingMapMode==4)}", Float) = 1
-		[sRGBWarning][ThryRGBAPacker(R, G, Nothing, Nothing, Linear, false)]_LightDataSDFMap ("SDF Map (expand)--{reference_properties:[_LightDataSDFMapPan, _LightDataSDFMapUV]}", 2D) = "white" { }
+		[TextureKeyword][sRGBWarning][ThryRGBAPacker(R, G, Nothing, Nothing, Linear, false)]_LightDataSDFMap ("SDF Map (expand)--{reference_properties:[_LightDataSDFMapPan, _LightDataSDFMapUV]}", 2D) = "white" { }
 		[HideInInspector][Vector2]_LightDataSDFMapPan ("Panning", Vector) = (0, 0, 0, 0)
 		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7, Matcap, 9)] _LightDataSDFMapUV ("UV", Int) = 0
 		_LightDataSDFMapLOD ("LOD", Range(0, 1)) = 0
@@ -125,12 +127,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		_LightingForcedColor ("Forced Color--{condition_showS:(_LightingForceColorEnabled==1), reference_property:_LightingForcedColorThemeIndex}", Color) = (1, 1, 1)
 		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _LightingForcedColorThemeIndex ("", Int) = 0
 		_Unlit_Intensity ("Unlit_Intensity--{condition_showS:(_LightingColorMode==2)}", Range(0.001, 4)) = 1
-		[ToggleUI]_LightingCapEnabled ("Limit Brightness", Float) = 1
-		_LightingCap ("Max Brightness--{condition_showS:(_LightingCapEnabled==1)}", Range(0, 10)) = 1
-		_LightingMinLightBrightness ("Min Brightness", Range(0, 1)) = 0
+		[DoNotLock][ToggleUI]_LightingCapEnabled ("Limit Brightness", Float) = 1
+		[DoNotLock]_LightingCap ("Max Brightness--{condition_showS:(_LightingCapEnabled==1)}", Range(0, 10)) = 1
+		[DoNotLock]_LightingMinLightBrightness ("Min Brightness", Range(0, 1)) = 0
 		_LightingIndirectUsesNormals ("Indirect Uses Normals--{condition_showS:(_LightingColorMode==0)}", Range(0, 1)) = 0
 		_LightingCastedShadows ("Receive Casted Shadows", Range(0, 1)) = 0
-		_LightingMonochromatic ("Grayscale Lighting", Range(0, 1)) = 0
+		[DoNotLock]_LightingMonochromatic ("Grayscale Lighting", Range(0, 1)) = 0
 		[ToggleUI]_LightingVertexLightingEnabled ("Vertex lights (Non-Important)", Float) = 1
 		[ToggleUI]_LightingMirrorVertexLightingEnabled ("Mirror Vertex lights (Non-Important)", Float) = 1
 		[ToggleUI]_LightingEnableLightVolumes ("Light Volumes", Float) = 1
@@ -404,6 +406,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[HideInInspector] s_end_EmissionAL1COut ("Center Out", Float) = 0
 		[HideInInspector] m_end_emission1Options ("", Float) = 0
 		[HideInInspector] m_vertexCategory ("Vertex Options", Float) = 0
+		[HideInInspector] m_start_Uzumore (" View Clip Prevention (Uzumore)--{reference_property:_UzumoreCategoryToggle,button_author:{text:sigmal00,action:{type:URL,data:https://github.com/sigmal00},hover:GitHub}}, button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/vertex-options/view-clip-prevention},hover:Documentation}}", Float) = 0
+		[HideInInspector][ThryToggle(POI_UZUMORE)] _UzumoreCategoryToggle (" View Clip Prevention (Uzumore)", Float) = 0
+		[ToggleUI] _UzumoreEnabled ("Animation Toggle", Float) = 1
+		_UzumoreAmount ("Push Amount (m)", Float) = 0.1
+		_UzumoreBias ("Push Bias", Float) = 0.001
+		[sRGBWarning]_UzumoreMask ("Push Mask (A)", 2D) = "white" { }
+		[ThryWideEnum(R, 0, G, 1, B, 2, A, 3)] _UzumoreMaskUV ("Push Mask Channel", Float) = 3
+		[HideInInspector] m_end_Uzumore ("Camera Push Back", Float) = 0
 		[HideInInspector] m_modifierCategory ("Global Modifiers & Data", Float) = 0
 		[HideInInspector] m_start_PoiGlobalCategory ("Global Data and Masks", Float) = 0
 		[HideInInspector] m_start_GlobalThemes ("Global Themes--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/global-themes},hover:Documentation}}", Float) = 0
@@ -442,24 +452,24 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 		[HideInInspector] m_end_GlobalMask ("Global Mask", Float) = 0
 		[HideInInspector] m_end_PoiGlobalCategory ("Global Data and Masks ", Float) = 0
 		[HideInInspector] m_start_PoiUVCategory ("UVs", Float) = 0
-		[HideInInspector] m_start_Stochastic ("Stochastic Sampling", Float) = 0
+		[HideInInspector] m_start_Stochastic ("Stochastic Sampling--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/modifiers/uvs/stochastic-sampling},hover:Documentation}}", Float) = 0
 		[KeywordEnum(Deliot Heitz, Hextile, None)] _StochasticMode ("Sampling Mode", Float) = 0
 		[HideInInspector] s_start_deliot ("Deliot Heitz--{persistent_expand:true,default_expand:false,condition_show:_StochasticMode==0}", Float) = 0
 		_StochasticDeliotHeitzDensity ("Detiling Density", Range(0.1, 10)) = 1
 		[HideInInspector] s_end_deliot ("Deliot Heitz", Float) = 0
 		[HideInInspector] m_end_Stochastic ("Stochastic Sampling", Float) = 0
-		[HideInInspector] m_start_uvLocalWorld ("Local World UV", Float) = 0
+		[HideInInspector] m_start_uvLocalWorld ("Local World UV--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/modifiers/uvs/local-world-uv},hover:Documentation}}", Float) = 0
 		[ThryWideEnum(X, 0, Y, 1, Z, 2, Zero, 3, VColor R, 4, VColor G, 5, VColor B, 6, VColor A, 7)] _UVModLocalPos0 ("Local X", Int) = 0
 		[ThryWideEnum(X, 0, Y, 1, Z, 2, Zero, 3, VColor R, 4, VColor G, 5, VColor B, 6, VColor A, 7)] _UVModLocalPos1 ("Local Y", Int) = 1
 		[Space(10)]
 		[ThryWideEnum(X, 0, Y, 1, Z, 2, Zero, 3)] _UVModWorldPos0 ("World X", Int) = 0
 		[ThryWideEnum(X, 0, Y, 1, Z, 2, Zero, 3)] _UVModWorldPos1 ("World Y", Int) = 2
 		[HideInInspector] m_end_uvLocalWorld ("Local World UV", Float) = 0
-		[HideInInspector] m_start_uvPanosphere ("Panosphere UV", Float) = 0
+		[HideInInspector] m_start_uvPanosphere ("Panosphere UV--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/modifiers/uvs/panosphere-uv},hover:Documentation}}", Float) = 0
 		[ToggleUI] _StereoEnabled ("Stereo Enabled", Float) = 0
 		[ToggleUI] _PanoUseBothEyes ("Perspective Correct (VR)", Float) = 1
 		[HideInInspector] m_end_uvPanosphere ("Panosphere UV", Float) = 0
-		[HideInInspector] m_start_uvPolar ("Polar UV", Float) = 0
+		[HideInInspector] m_start_uvPolar ("Polar UV--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/modifiers/uvs/polar-uv},hover:Documentation}}", Float) = 0
 		[ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8)] _PolarUV ("UV", Int) = 0
 		[Vector2]_PolarCenter ("Center Coordinate", Vector) = (.5, .5, 0, 0)
 		_PolarRadialScale ("Radial Scale", Float) = 1
@@ -561,6 +571,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
  #define MOCHIE_PBR 
  #define POI_EMISSION_1 
  #define POI_LTCGI 
+ #define PROP_LIGHTINGAOMAPS 
  #define VIGNETTE_MASKED 
  #define _EMISSION 
  #define _LIGHTINGMODE_REALISTIC 
@@ -823,12 +834,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float4 ldir = _UdonPointLightVolumeDirection[id]; // Dir + falloff or Rotation
 				 if (pos.w < 0) { // It is a spot light
 					float angle = color.w;
-					float spotMask = dot(ldir, -dirN) - angle;
+					float spotMask = dot(ldir.xyz, -dirN) - angle;
 					 if(customId >= 0 && spotMask < 0) return; // Spot cone based culling
 					 if (customId > 0) {  // If it uses Attenuation LUT
 						LV_SphereSpotLightAttenuationLUT(sqlen, dirN, -pos.w, color.rgb, spotMask, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 					} else { // If it uses default parametric attenuation
-						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color, _UdonLightBrightnessCutoff, sqrRange);
+						float3 att = LV_PointLightAttenuation(sqlen, -pos.w, color.rgb, _UdonLightBrightnessCutoff, sqrRange);
 						 if (customId < 0) { // If uses cookie
 							LV_SphereSpotLightCookie(sqlen, dirN, -pos.w, att, ldir, angle, customId, lightOcclusion, L0, L1r, L1g, L1b, count);
 						} else { // If it uses default parametric attenuation
@@ -1267,7 +1278,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _StochasticDeliotHeitzDensity;
 			#endif
 			#endif
-			#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGAOMAPS)
 			Texture2D _LightingAOMaps;
 			#endif
 			float4 _LightingAOMaps_ST;
@@ -1279,7 +1290,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightDataAOStrengthA;
 			float _LightDataAOGlobalMaskR;
 			float _LightDataAOGlobalMaskBlendTypeR;
-			#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGDETAILSHADOWMAPS)
 			Texture2D _LightingDetailShadowMaps;
 			#endif
 			float4 _LightingDetailShadowMaps_ST;
@@ -1295,7 +1306,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightingAddDetailShadowStrengthA;
 			float _LightDataDetailShadowGlobalMaskR;
 			float _LightDataDetailShadowGlobalMaskBlendTypeR;
-			#if defined(PROP_LIGHTINGSHADOWMASKS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGSHADOWMASKS)
 			Texture2D _LightingShadowMasks;
 			#endif
 			float4 _LightingShadowMasks_ST;
@@ -1310,7 +1321,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _Unlit_Intensity;
 			float _LightingColorMode;
 			float _LightingMapMode;
-			#if defined(PROP_LIGHTDATASDFMAP) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTDATASDFMAP)
 			Texture2D _LightDataSDFMap;
 			float4 _LightDataSDFMap_ST;
 			float2 _LightDataSDFMapPan;
@@ -1343,6 +1354,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightingEnableLightVolumes;
 			float _LightDataDebugEnabled;
 			float _LightingDebugVisualize;
+			uint _UdonForceSceneLighting;
 			float4 _Color;
 			float _ColorThemeIndex;
 			UNITY_DECLARE_TEX2D(_MainTex);
@@ -1639,7 +1651,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _MochieRoughnessMultiplier2;
 			float _RefSpecFresnelStrength;
 			float _SFExposureOcclusion;
-			samplerCUBE _MochieReflCube;
+			TextureCube _MochieReflCube;
 			float4 _MochieReflCube_HDR;
 			float _MochieForceFallback;
 			float _MochieGSAAEnabled;
@@ -1671,6 +1683,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
+				uint vertexId : SV_VertexID;
+				UNITY_VERTEX_INPUT_INSTANCE_ID
+			};
+			struct tessellatedAppData
+			{
+				float4 vertex : POSITION;
+				float3 normal : NORMAL;
+				float4 tangent : TANGENT;
+				float4 color : COLOR;
+				float2 uv0 : TEXCOORD0;
+				float2 uv1 : TEXCOORD1;
+				float2 uv2 : TEXCOORD2;
+				float2 uv3 : TEXCOORD3;
 				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
@@ -1684,7 +1709,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float4 localPos : TEXCOORD5;
 				float4 vertexColor : TEXCOORD6;
 				float4 lightmapUV : TEXCOORD7;
-				float4 worldDir : TEXCOORD8;
+				float worldDir : TEXCOORD8;
 				float2 fogData: TEXCOORD10;
 				UNITY_SHADOW_COORDS(12)
 				UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -2026,36 +2051,33 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float2 vertexUV(in VertexOut o, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return o.uv[0].xy;
-					case 1:
-					return o.uv[0].zw;
-					case 2:
-					return o.uv[1].xy;
-					case 3:
-					return o.uv[1].zw;
-					default:
-					return o.uv[0].xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
 			}
 			float2 vertexUV(in appdata v, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return v.uv0.xy;
-					case 1:
-					return v.uv1.xy;
-					case 2:
-					return v.uv2.xy;
-					case 3:
-					return v.uv3.xy;
-					default:
-					return v.uv0.xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return v.uv0.xy * w0 + v.uv1.xy * w1 + v.uv2.xy * w2 + v.uv3.xy * w3;
 			}
+			#ifdef POI_PASS_LILFUR
+			float2 vertexUV(in PoiGeoToFragLilFur o, int index)
+			{
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
+			}
+			#endif
 			float calculateluminance(float3 color)
 			{
 				return color.r * 0.299 + color.g * 0.587 + color.b * 0.114;
@@ -2068,6 +2090,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float dotToDegrees(float3 a, float3 b)
 			{
 				return dotToDegrees(dot(normalize(a), normalize(b)));
+			}
+			float poiFastAtan(float x)
+			{
+				return x * (abs(x) * (1.5707963 * abs(x) - 0.00507668) + 0.420691) /
+				(abs(x) * (abs(x) * (0.633387806 + abs(x)) + 0.671041944) + 0.215192627);
 			}
 			float _VRChatCameraMode;
 			float _VRChatMirrorMode;
@@ -2308,38 +2335,47 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 customBlend(float3 base, float3 blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 1: output = lerp(base, blendDarken(base, blend), alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float3 r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float3 r1 = lerp(base, blendDarken(base, blend), alpha);     // Darken (1)
+				float3 r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float3 r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float3 r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float3 r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float3 r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float3 r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float3 r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w1 = saturate(1 - abs(t - 1));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r1*w1 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			float3 customBlend(float base, float blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			#define REPLACE 0
 			#define SUBSTRACT 1
@@ -2351,18 +2387,24 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			#define ADD 7
 			float maskBlend(float baseMask, float blendMask, float blendType)
 			{
-				float output = 0;
-				switch(blendType)
-				{
-					case REPLACE: output = blendMask; break;
-					case SUBSTRACT: output = baseMask - blendMask; break;
-					case MULTIPLY: output = baseMask * blendMask; break;
-					case DIVIDE: output = baseMask / blendMask; break;
-					case MIN: output = min(baseMask, blendMask); break;
-					case MAX: output = max(baseMask, blendMask); break;
-					case AVERAGE: output = (baseMask + blendMask) * 0.5; break;
-					case ADD: output = baseMask + blendMask; break;
-				}
+				float replace = blendMask;
+				float subtract = baseMask - blendMask;
+				float multiply = baseMask * blendMask;
+				float divide = baseMask / max(blendMask, 0.0001);
+				float minVal = min(baseMask, blendMask);
+				float maxVal = max(baseMask, blendMask);
+				float average = (baseMask + blendMask) * 0.5;
+				float add = baseMask + blendMask;
+				float t = blendType + 0.5;
+				float w0 = step(t, 1);
+				float w1 = step(1, t) * step(t, 2);
+				float w2 = step(2, t) * step(t, 3);
+				float w3 = step(3, t) * step(t, 4);
+				float w4 = step(4, t) * step(t, 5);
+				float w5 = step(5, t) * step(t, 6);
+				float w6 = step(6, t) * step(t, 7);
+				float w7 = step(7, t);
+				float output = replace * w0 + subtract * w1 + multiply * w2 + divide * w3 + minVal * w4 + maxVal * w5 + average * w6 + add * w7;
 				return saturate(output);
 			}
 			float globalMaskBlend(float baseMask, float globalMaskIndex, float blendType, PoiMods poiMods)
@@ -2376,37 +2418,59 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					return maskBlend(baseMask, poiMods.globalMask[globalMaskIndex - 1], blendType);
 				}
 			}
-			float random(float2 p)
+			inline float poiRand(float2 co)
 			{
-				return frac(sin(dot(p, float2(12.9898, 78.2383))) * 43758.5453123);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
-			float2 random2(float2 p)
+			inline float4 poiRand4(float2 seed)
 			{
-				return frac(sin(float2(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
-			float3 random3(float2 p)
+			inline float2 poiRand2(float seed)
 			{
-				return frac(sin(float3(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)), dot(p, float2(248.3, 315.9)))) * 43758.5453);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 random3(float3 p)
+			inline float2 poiRand2(float2 seed)
 			{
-				return frac(sin(float3(dot(p, float3(127.1, 311.7, 248.6)), dot(p, float3(269.5, 183.3, 423.3)), dot(p, float3(248.3, 315.9, 184.2)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 randomFloat3(float2 Seed, float maximum)
+			inline float poiRand3(float seed)
 			{
-				return (.5 + float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed), float2(12.9898, 78.233))) * 43758.5453)
-				) * .5) * (maximum);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
-			float3 randomFloat3Range(float2 Seed, float Range)
+			inline float3 poiRand3(float2 seed)
 			{
-				return (float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed.x * Seed.y, Seed.y + Seed.x), float2(12.9898, 78.233))) * 43758.5453)
-				) * 2 - 1) * Range;
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3(float3 seed)
+			{
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3Range(float2 Seed, float Range)
+			{
+				float3 r = poiRand3(Seed);
+				return (r * 2.0 - 1.0) * Range;
 			}
 			float3 randomFloat3WiggleRange(float2 Seed, float Range, float wiggleSpeed, float timeOffset)
 			{
@@ -2554,14 +2618,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				float3 oklab = linear_srgb_to_oklab(color);
 				float chroma = length(oklab.yz);
-				if (chroma < 1e-5)
-				{
-					return color;
-				}
-				float hue = atan2(oklab.z, oklab.y);
-				hue = shift * TWO_PI + hue * selectOrShift;  // Add the hue shift
-				oklab.y = cos(hue) * chroma;
-				oklab.z = sin(hue) * chroma;
+				oklab.y = selectOrShift > 0.5 ? oklab.y : chroma;
+				oklab.z = selectOrShift > 0.5 ? oklab.z : 0;
+				float s, c;
+				sincos(shift * TWO_PI, s, c);
+				oklab.yz = float2(c * oklab.y - s * oklab.z, s * oklab.y + c * oklab.z);
 				return oklab_to_linear_srgb(oklab);
 			}
 			float3 hueShiftHSV(float3 color, float hueOffset, float selectOrShift)
@@ -2572,15 +2633,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 hueShift(float3 color, float shift, float ColorSpace, float selectOrShift)
 			{
-				switch(ColorSpace)
-				{
-					case 0.0:
-					return hueShiftOKLab(color, shift, selectOrShift);
-					case 1.0:
-					return hueShiftHSV(color, shift, selectOrShift);
-					default:
-					return float3(1.0, 0.0, 0.0);
-				}
+				float3 oklab = hueShiftOKLab(color, shift, selectOrShift);
+				float3 hsv = hueShiftHSV(color, shift, selectOrShift);
+				float w = saturate(ColorSpace);
+				return lerp(oklab, hsv, w);
 			}
 			float4 hueShift(float4 color, float shift, float ColorSpace, float selectOrShift)
 			{
@@ -2644,6 +2700,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				#endif
 				return _VRChatMirrorMode == 1 ? _VRChatMirrorCameraPos : _WorldSpaceCameraPos;
 			}
+			#ifdef POI_AUDIOLINK
+			inline int poiALBandPass(int bandIdx)
+			{
+				bandIdx = clamp(bandIdx, 0, 3);
+				return bandIdx == 0 ? ALPASS_AUDIOBASS : bandIdx == 1 ? ALPASS_AUDIOLOWMIDS : bandIdx == 2 ? ALPASS_AUDIOHIGHMIDS : ALPASS_AUDIOTREBLE;
+			}
+			#endif
 			float2 calcPixelScreenUVs(half4 grabPos)
 			{
 				half2 uv = grabPos.xy / (grabPos.w + 0.0000000001);
@@ -3117,6 +3180,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				return 1.f / (z / UNITY_MATRIX_P._34 + correctionFactor);
 			}
+			float evalRamp4(float time, float4 ramp)
+			{
+				return lerp(ramp.x, ramp.y, smoothstep(ramp.z, ramp.w, time));
+			}
 			float2 sharpSample(float4 texelSize, float2 p)
 			{
 				p = p * texelSize.zw;
@@ -3127,36 +3194,67 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyToGlobalMask(inout PoiMods poiMods, int index, int blendType, float val)
 			{
-				float valBlended = saturate(maskBlend(poiMods.globalMask[index], val, blendType));
-				switch(index)
-				{
-					case 0: poiMods.globalMask[0] = valBlended; break;
-					case 1: poiMods.globalMask[1] = valBlended; break;
-					case 2: poiMods.globalMask[2] = valBlended; break;
-					case 3: poiMods.globalMask[3] = valBlended; break;
-					case 4: poiMods.globalMask[4] = valBlended; break;
-					case 5: poiMods.globalMask[5] = valBlended; break;
-					case 6: poiMods.globalMask[6] = valBlended; break;
-					case 7: poiMods.globalMask[7] = valBlended; break;
-					case 8: poiMods.globalMask[8] = valBlended; break;
-					case 9: poiMods.globalMask[9] = valBlended; break;
-					case 10: poiMods.globalMask[10] = valBlended; break;
-					case 11: poiMods.globalMask[11] = valBlended; break;
-					case 12: poiMods.globalMask[12] = valBlended; break;
-					case 13: poiMods.globalMask[13] = valBlended; break;
-					case 14: poiMods.globalMask[14] = valBlended; break;
-					case 15: poiMods.globalMask[15] = valBlended; break;
-				}
+				float v0 = saturate(maskBlend(poiMods.globalMask[0], val, blendType));
+				float v1 = saturate(maskBlend(poiMods.globalMask[1], val, blendType));
+				float v2 = saturate(maskBlend(poiMods.globalMask[2], val, blendType));
+				float v3 = saturate(maskBlend(poiMods.globalMask[3], val, blendType));
+				float v4 = saturate(maskBlend(poiMods.globalMask[4], val, blendType));
+				float v5 = saturate(maskBlend(poiMods.globalMask[5], val, blendType));
+				float v6 = saturate(maskBlend(poiMods.globalMask[6], val, blendType));
+				float v7 = saturate(maskBlend(poiMods.globalMask[7], val, blendType));
+				float v8 = saturate(maskBlend(poiMods.globalMask[8], val, blendType));
+				float v9 = saturate(maskBlend(poiMods.globalMask[9], val, blendType));
+				float v10 = saturate(maskBlend(poiMods.globalMask[10], val, blendType));
+				float v11 = saturate(maskBlend(poiMods.globalMask[11], val, blendType));
+				float v12 = saturate(maskBlend(poiMods.globalMask[12], val, blendType));
+				float v13 = saturate(maskBlend(poiMods.globalMask[13], val, blendType));
+				float v14 = saturate(maskBlend(poiMods.globalMask[14], val, blendType));
+				float v15 = saturate(maskBlend(poiMods.globalMask[15], val, blendType));
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				float w4 = saturate(1 - abs(i - 4));
+				float w5 = saturate(1 - abs(i - 5));
+				float w6 = saturate(1 - abs(i - 6));
+				float w7 = saturate(1 - abs(i - 7));
+				float w8 = saturate(1 - abs(i - 8));
+				float w9 = saturate(1 - abs(i - 9));
+				float w10 = saturate(1 - abs(i - 10));
+				float w11 = saturate(1 - abs(i - 11));
+				float w12 = saturate(1 - abs(i - 12));
+				float w13 = saturate(1 - abs(i - 13));
+				float w14 = saturate(1 - abs(i - 14));
+				float w15 = saturate(1 - abs(i - 15));
+				poiMods.globalMask[0] = lerp(poiMods.globalMask[0], v0, w0);
+				poiMods.globalMask[1] = lerp(poiMods.globalMask[1], v1, w1);
+				poiMods.globalMask[2] = lerp(poiMods.globalMask[2], v2, w2);
+				poiMods.globalMask[3] = lerp(poiMods.globalMask[3], v3, w3);
+				poiMods.globalMask[4] = lerp(poiMods.globalMask[4], v4, w4);
+				poiMods.globalMask[5] = lerp(poiMods.globalMask[5], v5, w5);
+				poiMods.globalMask[6] = lerp(poiMods.globalMask[6], v6, w6);
+				poiMods.globalMask[7] = lerp(poiMods.globalMask[7], v7, w7);
+				poiMods.globalMask[8] = lerp(poiMods.globalMask[8], v8, w8);
+				poiMods.globalMask[9] = lerp(poiMods.globalMask[9], v9, w9);
+				poiMods.globalMask[10] = lerp(poiMods.globalMask[10], v10, w10);
+				poiMods.globalMask[11] = lerp(poiMods.globalMask[11], v11, w11);
+				poiMods.globalMask[12] = lerp(poiMods.globalMask[12], v12, w12);
+				poiMods.globalMask[13] = lerp(poiMods.globalMask[13], v13, w13);
+				poiMods.globalMask[14] = lerp(poiMods.globalMask[14], v14, w14);
+				poiMods.globalMask[15] = lerp(poiMods.globalMask[15], v15, w15);
 			}
 			void assignValueToVectorFromIndex(inout float4 vec, int index, float value)
 			{
-				switch(index)
-				{
-					case 0: vec[0] = value; break;
-					case 1: vec[1] = value; break;
-					case 2: vec[2] = value; break;
-					case 3: vec[3] = value; break;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				vec[0] = lerp(vec[0], value, w0);
+				vec[1] = lerp(vec[1], value, w1);
+				vec[2] = lerp(vec[2], value, w2);
+				vec[3] = lerp(vec[3], value, w3);
 			}
 			float3 mod289(float3 x)
 			{
@@ -3231,27 +3329,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyUnityFog(inout float3 col, float2 fogData)
 			{
-				float fogFactor = 1.0;
-				float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
-				if (unity_FogParams.z != unity_FogParams.w)
+				if (0.0 == 0)
 				{
-					fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					float fogFactor = 1.0;
+					float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
+					if (unity_FogParams.z != unity_FogParams.w)
+					{
+						fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					}
+					else if (fogData.y)
+					{
+						float exponent_val = unity_FogParams.x * depth;
+						fogFactor = exp2(-exponent_val * exponent_val);
+					}
+					else if (unity_FogParams.y != 0.0f)
+					{
+						float exponent = unity_FogParams.y * depth;
+						fogFactor = exp2(-exponent);
+					}
+					fixed3 appliedFogColor = unity_FogColor.rgb;
+					#if defined(UNITY_PASS_FORWARDADD)
+					appliedFogColor = fixed3(0, 0, 0);
+					#endif
+					col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 				}
-				else if (fogData.y)
-				{
-					float exponent_val = unity_FogParams.x * depth;
-					fogFactor = exp2(-exponent_val * exponent_val);
-				}
-				else if (unity_FogParams.y != 0.0f)
-				{
-					float exponent = unity_FogParams.y * depth;
-					fogFactor = exp2(-exponent);
-				}
-				fixed3 appliedFogColor = unity_FogColor.rgb;
-				#if defined(UNITY_PASS_FORWARDADD)
-				appliedFogColor = fixed3(0, 0, 0);
-				#endif
-				col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 			}
 			void applyReducedRenderClipDistance(inout VertexOut o)
 			{
@@ -3315,7 +3416,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				TRANSFER_SHADOW_CASTER_NOPOS(o, o.pos);
 				#endif
 				#endif
-				o.worldDir = float4(o.worldPos.xyz - _WorldSpaceCameraPos, dot(o.pos, CalculateFrustumCorrection()));
+				o.worldDir = dot(o.pos, CalculateFrustumCorrection());
 				if (0.0)
 				{
 					applyReducedRenderClipDistance(o);
@@ -3416,8 +3517,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				longitude = fwidth(phi) - 0.0001 < fwidth(phi_frac) ? phi : phi_frac;
 				longitude *= 2;
 				float2 sphereCoords = float2(longitude, latitude) * float2(1.0, 1.0 / UNITY_PI);
-				sphereCoords = float2(1.0, 1.0) - sphereCoords;
-				return (sphereCoords + float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).xy) * float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).zw;
+				return float2(1.0, 1.0) - sphereCoords;
 			}
 			float2 StereoPanoProjection(float3 coords)
 			{
@@ -4478,7 +4578,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				indirectLight.diffuse = max(indirectLight.diffuse + 0.0, 0);
 				#endif
 				poiLight.rampedLightMap = poiLight.nDotLSaturated;
-				poiLight.finalLighting = max(POI_BRDF_PBS(1, 0, 0, 0, poiMesh.normals[1], poiCam.viewDir, light, indirectLight).xyz, 0.0);
+				poiLight.finalLighting = max(POI_BRDF_PBS(1, 0, 0, 0, poiMesh.normals[1], poiCam.viewDir, light, indirectLight).xyz, _LightingMinLightBrightness);
 				#ifdef UNITY_PASS_FORWARDBASE
 				if (_UdonLightVolumeEnabled && 1.0)
 				{
@@ -4488,7 +4588,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					float3 L1b = 0;
 					#ifdef LIGHTMAP_ON
 					LightVolumeAdditiveSH(poiMesh.worldPos, L0, L1r, L1g, L1b);
-					poiLight.finalLighting += clamp(LightVolumeEvaluate(poiMesh.normals[1], L0, L1r, L1g, L1b), 0.0, 1.0);
+					poiLight.finalLighting += clamp(LightVolumeEvaluate(poiMesh.normals[1], L0, L1r, L1g, L1b), _LightingMinLightBrightness, _LightingCap);
 					#endif
 				}
 				#endif
@@ -4665,7 +4765,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				#endif
 				poiFragData.emission += emission0;
-				return emission0 * 0.0;
+				return emission0 * 1.0;
 			}
 			#endif
 			float calculateGlowInTheDark__1(in float minLight, in float maxLight, in float minEmissionMultiplier, in float maxEmissionMultiplier, in float enabled, in float worldOrMesh, in PoiLight poiLight)
@@ -4839,7 +4939,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				return p0;
 			}
-			float3 GetReflections(in PoiCam poiCam, in PoiLight pl, in PoiMesh poiMesh, float roughness, float ForceFallback, float LightFallback, samplerCUBE reflectionCube, float4 hdrData, float3 reflectionDir)
+			float3 GetReflections(in PoiCam poiCam, in PoiLight pl, in PoiMesh poiMesh, float perceptualRoughness, float ForceFallback, float LightFallback, TextureCube reflectionCube, float4 hdrData, float3 reflectionDir)
 			{
 				float3 reflections = 0;
 				float3 lighting = pl.finalLighting;
@@ -4849,19 +4949,31 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					if (SceneHasReflections())
 					{
 						#ifdef UNITY_PASS_FORWARDBASE
-						reflections = GetWorldReflections(reflectionDir, poiMesh.worldPos.xyz, roughness);
+						reflections = GetWorldReflections(reflectionDir, poiMesh.worldPos.xyz, perceptualRoughness);
 						#endif
 					}
 					else
 					{
 						#ifdef UNITY_PASS_FORWARDBASE
-						reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+						float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+						float mipLevel0 = floor(mipLevel);
+						float mipLevel1 = mipLevel0 + 1;
+						float mipLerp = frac(mipLevel);
+						float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+						float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+						reflections = lerp(sample0, sample1, mipLerp);
 						reflections = DecodeHDR(float4(reflections, 1), hdrData) * lerp(1, pl.finalLighting, LightFallback);
 						#endif
 						#ifdef POI_PASS_ADD
 						if (LightFallback)
 						{
-							reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+							float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+							float mipLevel0 = floor(mipLevel);
+							float mipLevel1 = mipLevel0 + 1;
+							float mipLerp = frac(mipLevel);
+							float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+							float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+							reflections = lerp(sample0, sample1, mipLerp);
 							reflections = DecodeHDR(float4(reflections, 1), hdrData) * pl.finalLighting;
 						}
 						#endif
@@ -4870,13 +4982,25 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				else
 				{
 					#ifdef UNITY_PASS_FORWARDBASE
-					reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+					float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+					float mipLevel0 = floor(mipLevel);
+					float mipLevel1 = mipLevel0 + 1;
+					float mipLerp = frac(mipLevel);
+					float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+					float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+					reflections = lerp(sample0, sample1, mipLerp);
 					reflections = DecodeHDR(float4(reflections, 1), hdrData) * lerp(1, pl.finalLighting, LightFallback);
 					#endif
 					#ifdef POI_PASS_ADD
 					if (LightFallback)
 					{
-						reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+						float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+						float mipLevel0 = floor(mipLevel);
+						float mipLevel1 = mipLevel0 + 1;
+						float mipLerp = frac(mipLevel);
+						float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+						float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+						reflections = lerp(sample0, sample1, mipLerp);
 						reflections = DecodeHDR(float4(reflections, 1), hdrData) * pl.finalLighting;
 					}
 					#endif
@@ -4991,12 +5115,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float reflectionMask = poiFragData.reflectionMask;
 				if (0.0 > 0)
 				{
-					metallic = customBlend(metallic, poiMods.globalMask[0.0 - 1], 2.0);
+					metallic = maskBlend(metallic, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				if (0.0 > 0)
 				{
-					smoothness = customBlend(smoothness, poiMods.globalMask[0.0 - 1], 2.0);
-					smoothness2 = customBlend(smoothness2, poiMods.globalMask[0.0 - 1], 2.0);
+					smoothness = maskBlend(smoothness, poiMods.globalMask[0.0 - 1], 2.0);
+					smoothness2 = maskBlend(smoothness2, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				if (0.0 > 0)
 				{
@@ -5090,7 +5214,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				float surfaceReduction = (1.0 / (brdfRoughness * brdfRoughness + 1.0));
 				float grazingTerm = saturate(smoothness + (1 - omr));
-				float3 reflCol = GetReflections(poiCam, poiLight, poiMesh, roughness, 0.0, 1.0, _MochieReflCube, _MochieReflCube_HDR, pbrReflectionDir);
+				float3 reflCol = GetReflections(poiCam, poiLight, poiMesh, percepRough, 0.0, 1.0, _MochieReflCube, _MochieReflCube_HDR, pbrReflectionDir);
 				reflections = surfaceReduction * reflCol * FresnelLerp(specCol, specCol + lerp(specCol, 1, 0.5) * 0.5, pbrNDotV) * SFVisibility(brdfRoughness, poiLight.directColor, pbrNDotV, 0.0);
 				reflections *= poiThemeColor(poiMods, float4(1,1,1,1), 0.0);
 				reflections *= reflectionMask;
@@ -5244,15 +5368,21 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiCam.posScreenPixels = calcPixelScreenUVs(poiCam.posScreenSpace);
 				poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
-				poiCam.worldDirection.w = i.worldDir.w;
+				poiCam.worldDirection.w = i.worldDir;
 				calculateGlobalThemes(poiMods);
+				if (_UdonForceSceneLighting)
+				{
+					_LightingMinLightBrightness = 0;
+					_LightingCapEnabled = 0;
+					_LightingMonochromatic = 0;
+				}
 				poiLight.finalLightAdd = 0;
 				#ifdef UNITY_PASS_FORWARDBASE
-				float3 L0 =  float3(0,0,0);
-				float3 L1r = float3(0,0,0);
-				float3 L1g = float3(0,0,0);
-				float3 L1b = float3(0,0,0);
-				if(_UdonLightVolumeEnabled && 1.0)
+				float3 L0 = float3(0, 0, 0);
+				float3 L1r = float3(0, 0, 0);
+				float3 L1g = float3(0, 0, 0);
+				float3 L1b = float3(0, 0, 0);
+				if (_UdonLightVolumeEnabled && 1.0)
 				{
 					LightVolumeSH(poiMesh.worldPos, L0, L1r, L1g, L1b);
 					PoiSHAr = float4(L1r, L0.r);
@@ -5264,7 +5394,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					PoiSHC = 0;
 				}
 				#endif
-				#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGAOMAPS)
 				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 0.0)), lerp(1, AOMaps.b, 0.0)), lerp(1, AOMaps.a, 0.0));
 				#else
@@ -5274,7 +5404,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				{
 					poiLight.occlusion = maskBlend(poiLight.occlusion, poiMods.globalMask[0.0 - 1], 2.0);
 				}
-				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS)
 				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				#ifndef POI_PASS_ADD
 				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
@@ -5288,7 +5418,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				{
 					poiLight.detailShadow = maskBlend(poiLight.detailShadow, poiMods.globalMask[0.0 - 1], 2.0);
 				}
-				#if defined(PROP_LIGHTINGSHADOWMASKS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGSHADOWMASKS)
 				float4 ShadowMasks = POI2D_SAMPLER_PAN(_LightingShadowMasks, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				poiLight.shadowMask = lerp(1, ShadowMasks.r, 1.0) * lerp(1, ShadowMasks.g, 0.0) * lerp(1, ShadowMasks.b, 0.0) * lerp(1, ShadowMasks.a, 0.0);
 				#else
@@ -5398,7 +5528,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float lightMapMode = 0.0;
 				if (0.0 == 0)
 				{
-					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.333333 * PoiSHAg.xyz + 0.333333 * PoiSHAb.xyz + 0.333333;
+					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + (PoiSHAr.xyz + PoiSHAg.xyz + PoiSHAb.xyz) / 3.0;
 				}
 				if (0.0 == 1 || 0.0 == 2)
 				{
@@ -5443,11 +5573,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.direction = normalize(poiLight.direction);
 				poiLight.attenuationStrength = 0.0;
 				poiLight.attenuation = 1;
+				#ifndef POI_PASS_LILFUR
 				if (!all(_LightColor0.rgb == 0.0))
 				{
 					UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 					poiLight.attenuation *= attenuation;
 				}
+				#endif
 				#if defined(HANDLE_SHADOWS_BLENDING_IN_GI)
 				half bakedAtten = UnitySampleBakedOcclusion(poiMesh.lightmapUV.xy, poiMesh.worldPos);
 				float zDist = dot(_WorldSpaceCameraPos - poiMesh.worldPos, UNITY_MATRIX_V[2].xyz);
@@ -5505,7 +5637,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				if (lightMapMode == 4)
 				{
-					#if defined(PROP_LIGHTDATASDFMAP) || !defined(OPTIMIZER_ENABLED)
+					#if defined(PROP_LIGHTDATASDFMAP)
 					float2 lightDataSDFMap = 1;
 					if (0.0 > 0)
 					{
@@ -5540,19 +5672,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.indirectColor = max(poiLight.indirectColor, 0.0001);
 				if (0.0 == 3)
 				{
-					poiLight.directColor = max(poiLight.directColor, 0.0);
+					poiLight.directColor = max(poiLight.directColor, _LightingMinLightBrightness);
 				}
 				else
 				{
-					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, (0.0 * rcp(calculateluminance(poiLight.directColor)))));
-					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, (0.0 * rcp(calculateluminance(poiLight.indirectColor)))));
+					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, (_LightingMinLightBrightness * rcp(calculateluminance(poiLight.directColor)))));
+					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, (_LightingMinLightBrightness * rcp(calculateluminance(poiLight.indirectColor)))));
 				}
-				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
-				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
-				if (1.0)
+				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), _LightingMonochromatic);
+				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), _LightingMonochromatic);
+				if (_LightingCapEnabled)
 				{
-					poiLight.directColor = min(poiLight.directColor, 1.0);
-					poiLight.indirectColor = min(poiLight.indirectColor, 1.0);
+					poiLight.directColor = min(poiLight.directColor, _LightingCap);
+					poiLight.indirectColor = min(poiLight.indirectColor, _LightingCap);
 				}
 				if (0.0)
 				{
@@ -5587,10 +5719,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.attenuation = (lightCoord.z > 0) * UnitySpotCookie(lightCoord) * UnitySpotAttenuate(lightCoord.xyz);
 				#endif
 				#else
+				#ifndef POI_PASS_LILFUR
 				UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 				poiLight.attenuation = attenuation;
 				#endif
+				#endif
+				#ifndef POI_PASS_LILFUR
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
+				#endif
 				poiLight.attenuationStrength = 1.0;
 				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
@@ -5628,12 +5764,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				MetallicAndSpecularFragDataInit(poiFragData, poiMesh, poiMods);
 				#endif
 				poiFragData.baseColor = mainTexture.rgb;
-				#ifndef POI_PASS_BASETWO
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
 				poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
 				#else
-				poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
-				poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				if(_TwoPassOverrideFirstPassColor)
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
+					poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				}
+				else
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
+					poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
+				}
 				#endif
 				if (2.0)
 				{
@@ -5749,9 +5893,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					acc.diffuse *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0);
 					poiLight.finalLightAdd += (acc.specular * lerp(unity_ColorSpaceDielectricSpec, poiFragData.baseColor, LTCGImetalness)) * LTCGISpecMask;
 					poiLight.finalLighting += acc.diffuse;
-					if (1.0)
+					if (_LightingCapEnabled)
 					{
-						poiLight.finalLighting = min(poiLight.finalLighting, 1.0);
+						poiLight.finalLighting = min(poiLight.finalLighting, _LightingCap);
 					}
 				}
 				#endif
@@ -5759,12 +5903,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				#ifdef MOCHIE_PBR
 				MochieBRDF(poiFragData, poiCam, poiLight, poiMesh, poiMods);
 				#endif
-				#ifndef POI_PASS_BASETWO
+				poiFragData.finalColor += poiLight.finalLightAdd;
+				#ifndef POI_PASS_LILFUR
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				poiFragData.finalColor += poiLight.finalLightAdd;
+				#endif
 				#ifdef UNITY_PASS_FORWARDBASE
 				poiFragData.emission = max(poiFragData.emission * 1.0, 0);
 				poiFragData.finalColor = max(poiFragData.finalColor * 1.0, 0);
@@ -5808,6 +5954,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
  #define MOCHIE_PBR 
  #define POI_EMISSION_1 
  #define POI_LTCGI 
+ #define PROP_LIGHTINGAOMAPS 
  #define VIGNETTE_MASKED 
  #define _EMISSION 
  #define _LIGHTINGMODE_REALISTIC 
@@ -5935,7 +6082,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _StochasticDeliotHeitzDensity;
 			#endif
 			#endif
-			#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGAOMAPS)
 			Texture2D _LightingAOMaps;
 			#endif
 			float4 _LightingAOMaps_ST;
@@ -5947,7 +6094,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightDataAOStrengthA;
 			float _LightDataAOGlobalMaskR;
 			float _LightDataAOGlobalMaskBlendTypeR;
-			#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGDETAILSHADOWMAPS)
 			Texture2D _LightingDetailShadowMaps;
 			#endif
 			float4 _LightingDetailShadowMaps_ST;
@@ -5963,7 +6110,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightingAddDetailShadowStrengthA;
 			float _LightDataDetailShadowGlobalMaskR;
 			float _LightDataDetailShadowGlobalMaskBlendTypeR;
-			#if defined(PROP_LIGHTINGSHADOWMASKS) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTINGSHADOWMASKS)
 			Texture2D _LightingShadowMasks;
 			#endif
 			float4 _LightingShadowMasks_ST;
@@ -5978,7 +6125,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _Unlit_Intensity;
 			float _LightingColorMode;
 			float _LightingMapMode;
-			#if defined(PROP_LIGHTDATASDFMAP) || !defined(OPTIMIZER_ENABLED)
+			#if defined(PROP_LIGHTDATASDFMAP)
 			Texture2D _LightDataSDFMap;
 			float4 _LightDataSDFMap_ST;
 			float2 _LightDataSDFMapPan;
@@ -6011,6 +6158,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _LightingEnableLightVolumes;
 			float _LightDataDebugEnabled;
 			float _LightingDebugVisualize;
+			uint _UdonForceSceneLighting;
 			float4 _Color;
 			float _ColorThemeIndex;
 			UNITY_DECLARE_TEX2D(_MainTex);
@@ -6168,7 +6316,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float _MochieRoughnessMultiplier2;
 			float _RefSpecFresnelStrength;
 			float _SFExposureOcclusion;
-			samplerCUBE _MochieReflCube;
+			TextureCube _MochieReflCube;
 			float4 _MochieReflCube_HDR;
 			float _MochieForceFallback;
 			float _MochieGSAAEnabled;
@@ -6196,6 +6344,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
+				uint vertexId : SV_VertexID;
+				UNITY_VERTEX_INPUT_INSTANCE_ID
+			};
+			struct tessellatedAppData
+			{
+				float4 vertex : POSITION;
+				float3 normal : NORMAL;
+				float4 tangent : TANGENT;
+				float4 color : COLOR;
+				float2 uv0 : TEXCOORD0;
+				float2 uv1 : TEXCOORD1;
+				float2 uv2 : TEXCOORD2;
+				float2 uv3 : TEXCOORD3;
 				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
@@ -6209,7 +6370,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float4 localPos : TEXCOORD5;
 				float4 vertexColor : TEXCOORD6;
 				float4 lightmapUV : TEXCOORD7;
-				float4 worldDir : TEXCOORD8;
+				float worldDir : TEXCOORD8;
 				float2 fogData: TEXCOORD10;
 				UNITY_SHADOW_COORDS(12)
 				UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -6551,36 +6712,33 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float2 vertexUV(in VertexOut o, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return o.uv[0].xy;
-					case 1:
-					return o.uv[0].zw;
-					case 2:
-					return o.uv[1].xy;
-					case 3:
-					return o.uv[1].zw;
-					default:
-					return o.uv[0].xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
 			}
 			float2 vertexUV(in appdata v, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return v.uv0.xy;
-					case 1:
-					return v.uv1.xy;
-					case 2:
-					return v.uv2.xy;
-					case 3:
-					return v.uv3.xy;
-					default:
-					return v.uv0.xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return v.uv0.xy * w0 + v.uv1.xy * w1 + v.uv2.xy * w2 + v.uv3.xy * w3;
 			}
+			#ifdef POI_PASS_LILFUR
+			float2 vertexUV(in PoiGeoToFragLilFur o, int index)
+			{
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
+			}
+			#endif
 			float calculateluminance(float3 color)
 			{
 				return color.r * 0.299 + color.g * 0.587 + color.b * 0.114;
@@ -6593,6 +6751,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float dotToDegrees(float3 a, float3 b)
 			{
 				return dotToDegrees(dot(normalize(a), normalize(b)));
+			}
+			float poiFastAtan(float x)
+			{
+				return x * (abs(x) * (1.5707963 * abs(x) - 0.00507668) + 0.420691) /
+				(abs(x) * (abs(x) * (0.633387806 + abs(x)) + 0.671041944) + 0.215192627);
 			}
 			float _VRChatCameraMode;
 			float _VRChatMirrorMode;
@@ -6833,38 +6996,47 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 customBlend(float3 base, float3 blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 1: output = lerp(base, blendDarken(base, blend), alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float3 r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float3 r1 = lerp(base, blendDarken(base, blend), alpha);     // Darken (1)
+				float3 r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float3 r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float3 r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float3 r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float3 r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float3 r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float3 r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w1 = saturate(1 - abs(t - 1));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r1*w1 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			float3 customBlend(float base, float blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			#define REPLACE 0
 			#define SUBSTRACT 1
@@ -6876,18 +7048,24 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			#define ADD 7
 			float maskBlend(float baseMask, float blendMask, float blendType)
 			{
-				float output = 0;
-				switch(blendType)
-				{
-					case REPLACE: output = blendMask; break;
-					case SUBSTRACT: output = baseMask - blendMask; break;
-					case MULTIPLY: output = baseMask * blendMask; break;
-					case DIVIDE: output = baseMask / blendMask; break;
-					case MIN: output = min(baseMask, blendMask); break;
-					case MAX: output = max(baseMask, blendMask); break;
-					case AVERAGE: output = (baseMask + blendMask) * 0.5; break;
-					case ADD: output = baseMask + blendMask; break;
-				}
+				float replace = blendMask;
+				float subtract = baseMask - blendMask;
+				float multiply = baseMask * blendMask;
+				float divide = baseMask / max(blendMask, 0.0001);
+				float minVal = min(baseMask, blendMask);
+				float maxVal = max(baseMask, blendMask);
+				float average = (baseMask + blendMask) * 0.5;
+				float add = baseMask + blendMask;
+				float t = blendType + 0.5;
+				float w0 = step(t, 1);
+				float w1 = step(1, t) * step(t, 2);
+				float w2 = step(2, t) * step(t, 3);
+				float w3 = step(3, t) * step(t, 4);
+				float w4 = step(4, t) * step(t, 5);
+				float w5 = step(5, t) * step(t, 6);
+				float w6 = step(6, t) * step(t, 7);
+				float w7 = step(7, t);
+				float output = replace * w0 + subtract * w1 + multiply * w2 + divide * w3 + minVal * w4 + maxVal * w5 + average * w6 + add * w7;
 				return saturate(output);
 			}
 			float globalMaskBlend(float baseMask, float globalMaskIndex, float blendType, PoiMods poiMods)
@@ -6901,37 +7079,59 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					return maskBlend(baseMask, poiMods.globalMask[globalMaskIndex - 1], blendType);
 				}
 			}
-			float random(float2 p)
+			inline float poiRand(float2 co)
 			{
-				return frac(sin(dot(p, float2(12.9898, 78.2383))) * 43758.5453123);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
-			float2 random2(float2 p)
+			inline float4 poiRand4(float2 seed)
 			{
-				return frac(sin(float2(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
-			float3 random3(float2 p)
+			inline float2 poiRand2(float seed)
 			{
-				return frac(sin(float3(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)), dot(p, float2(248.3, 315.9)))) * 43758.5453);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 random3(float3 p)
+			inline float2 poiRand2(float2 seed)
 			{
-				return frac(sin(float3(dot(p, float3(127.1, 311.7, 248.6)), dot(p, float3(269.5, 183.3, 423.3)), dot(p, float3(248.3, 315.9, 184.2)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 randomFloat3(float2 Seed, float maximum)
+			inline float poiRand3(float seed)
 			{
-				return (.5 + float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed), float2(12.9898, 78.233))) * 43758.5453)
-				) * .5) * (maximum);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
-			float3 randomFloat3Range(float2 Seed, float Range)
+			inline float3 poiRand3(float2 seed)
 			{
-				return (float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed.x * Seed.y, Seed.y + Seed.x), float2(12.9898, 78.233))) * 43758.5453)
-				) * 2 - 1) * Range;
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3(float3 seed)
+			{
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3Range(float2 Seed, float Range)
+			{
+				float3 r = poiRand3(Seed);
+				return (r * 2.0 - 1.0) * Range;
 			}
 			float3 randomFloat3WiggleRange(float2 Seed, float Range, float wiggleSpeed, float timeOffset)
 			{
@@ -7079,14 +7279,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				float3 oklab = linear_srgb_to_oklab(color);
 				float chroma = length(oklab.yz);
-				if (chroma < 1e-5)
-				{
-					return color;
-				}
-				float hue = atan2(oklab.z, oklab.y);
-				hue = shift * TWO_PI + hue * selectOrShift;  // Add the hue shift
-				oklab.y = cos(hue) * chroma;
-				oklab.z = sin(hue) * chroma;
+				oklab.y = selectOrShift > 0.5 ? oklab.y : chroma;
+				oklab.z = selectOrShift > 0.5 ? oklab.z : 0;
+				float s, c;
+				sincos(shift * TWO_PI, s, c);
+				oklab.yz = float2(c * oklab.y - s * oklab.z, s * oklab.y + c * oklab.z);
 				return oklab_to_linear_srgb(oklab);
 			}
 			float3 hueShiftHSV(float3 color, float hueOffset, float selectOrShift)
@@ -7097,15 +7294,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 hueShift(float3 color, float shift, float ColorSpace, float selectOrShift)
 			{
-				switch(ColorSpace)
-				{
-					case 0.0:
-					return hueShiftOKLab(color, shift, selectOrShift);
-					case 1.0:
-					return hueShiftHSV(color, shift, selectOrShift);
-					default:
-					return float3(1.0, 0.0, 0.0);
-				}
+				float3 oklab = hueShiftOKLab(color, shift, selectOrShift);
+				float3 hsv = hueShiftHSV(color, shift, selectOrShift);
+				float w = saturate(ColorSpace);
+				return lerp(oklab, hsv, w);
 			}
 			float4 hueShift(float4 color, float shift, float ColorSpace, float selectOrShift)
 			{
@@ -7169,6 +7361,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				#endif
 				return _VRChatMirrorMode == 1 ? _VRChatMirrorCameraPos : _WorldSpaceCameraPos;
 			}
+			#ifdef POI_AUDIOLINK
+			inline int poiALBandPass(int bandIdx)
+			{
+				bandIdx = clamp(bandIdx, 0, 3);
+				return bandIdx == 0 ? ALPASS_AUDIOBASS : bandIdx == 1 ? ALPASS_AUDIOLOWMIDS : bandIdx == 2 ? ALPASS_AUDIOHIGHMIDS : ALPASS_AUDIOTREBLE;
+			}
+			#endif
 			float2 calcPixelScreenUVs(half4 grabPos)
 			{
 				half2 uv = grabPos.xy / (grabPos.w + 0.0000000001);
@@ -7642,6 +7841,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				return 1.f / (z / UNITY_MATRIX_P._34 + correctionFactor);
 			}
+			float evalRamp4(float time, float4 ramp)
+			{
+				return lerp(ramp.x, ramp.y, smoothstep(ramp.z, ramp.w, time));
+			}
 			float2 sharpSample(float4 texelSize, float2 p)
 			{
 				p = p * texelSize.zw;
@@ -7652,36 +7855,67 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyToGlobalMask(inout PoiMods poiMods, int index, int blendType, float val)
 			{
-				float valBlended = saturate(maskBlend(poiMods.globalMask[index], val, blendType));
-				switch(index)
-				{
-					case 0: poiMods.globalMask[0] = valBlended; break;
-					case 1: poiMods.globalMask[1] = valBlended; break;
-					case 2: poiMods.globalMask[2] = valBlended; break;
-					case 3: poiMods.globalMask[3] = valBlended; break;
-					case 4: poiMods.globalMask[4] = valBlended; break;
-					case 5: poiMods.globalMask[5] = valBlended; break;
-					case 6: poiMods.globalMask[6] = valBlended; break;
-					case 7: poiMods.globalMask[7] = valBlended; break;
-					case 8: poiMods.globalMask[8] = valBlended; break;
-					case 9: poiMods.globalMask[9] = valBlended; break;
-					case 10: poiMods.globalMask[10] = valBlended; break;
-					case 11: poiMods.globalMask[11] = valBlended; break;
-					case 12: poiMods.globalMask[12] = valBlended; break;
-					case 13: poiMods.globalMask[13] = valBlended; break;
-					case 14: poiMods.globalMask[14] = valBlended; break;
-					case 15: poiMods.globalMask[15] = valBlended; break;
-				}
+				float v0 = saturate(maskBlend(poiMods.globalMask[0], val, blendType));
+				float v1 = saturate(maskBlend(poiMods.globalMask[1], val, blendType));
+				float v2 = saturate(maskBlend(poiMods.globalMask[2], val, blendType));
+				float v3 = saturate(maskBlend(poiMods.globalMask[3], val, blendType));
+				float v4 = saturate(maskBlend(poiMods.globalMask[4], val, blendType));
+				float v5 = saturate(maskBlend(poiMods.globalMask[5], val, blendType));
+				float v6 = saturate(maskBlend(poiMods.globalMask[6], val, blendType));
+				float v7 = saturate(maskBlend(poiMods.globalMask[7], val, blendType));
+				float v8 = saturate(maskBlend(poiMods.globalMask[8], val, blendType));
+				float v9 = saturate(maskBlend(poiMods.globalMask[9], val, blendType));
+				float v10 = saturate(maskBlend(poiMods.globalMask[10], val, blendType));
+				float v11 = saturate(maskBlend(poiMods.globalMask[11], val, blendType));
+				float v12 = saturate(maskBlend(poiMods.globalMask[12], val, blendType));
+				float v13 = saturate(maskBlend(poiMods.globalMask[13], val, blendType));
+				float v14 = saturate(maskBlend(poiMods.globalMask[14], val, blendType));
+				float v15 = saturate(maskBlend(poiMods.globalMask[15], val, blendType));
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				float w4 = saturate(1 - abs(i - 4));
+				float w5 = saturate(1 - abs(i - 5));
+				float w6 = saturate(1 - abs(i - 6));
+				float w7 = saturate(1 - abs(i - 7));
+				float w8 = saturate(1 - abs(i - 8));
+				float w9 = saturate(1 - abs(i - 9));
+				float w10 = saturate(1 - abs(i - 10));
+				float w11 = saturate(1 - abs(i - 11));
+				float w12 = saturate(1 - abs(i - 12));
+				float w13 = saturate(1 - abs(i - 13));
+				float w14 = saturate(1 - abs(i - 14));
+				float w15 = saturate(1 - abs(i - 15));
+				poiMods.globalMask[0] = lerp(poiMods.globalMask[0], v0, w0);
+				poiMods.globalMask[1] = lerp(poiMods.globalMask[1], v1, w1);
+				poiMods.globalMask[2] = lerp(poiMods.globalMask[2], v2, w2);
+				poiMods.globalMask[3] = lerp(poiMods.globalMask[3], v3, w3);
+				poiMods.globalMask[4] = lerp(poiMods.globalMask[4], v4, w4);
+				poiMods.globalMask[5] = lerp(poiMods.globalMask[5], v5, w5);
+				poiMods.globalMask[6] = lerp(poiMods.globalMask[6], v6, w6);
+				poiMods.globalMask[7] = lerp(poiMods.globalMask[7], v7, w7);
+				poiMods.globalMask[8] = lerp(poiMods.globalMask[8], v8, w8);
+				poiMods.globalMask[9] = lerp(poiMods.globalMask[9], v9, w9);
+				poiMods.globalMask[10] = lerp(poiMods.globalMask[10], v10, w10);
+				poiMods.globalMask[11] = lerp(poiMods.globalMask[11], v11, w11);
+				poiMods.globalMask[12] = lerp(poiMods.globalMask[12], v12, w12);
+				poiMods.globalMask[13] = lerp(poiMods.globalMask[13], v13, w13);
+				poiMods.globalMask[14] = lerp(poiMods.globalMask[14], v14, w14);
+				poiMods.globalMask[15] = lerp(poiMods.globalMask[15], v15, w15);
 			}
 			void assignValueToVectorFromIndex(inout float4 vec, int index, float value)
 			{
-				switch(index)
-				{
-					case 0: vec[0] = value; break;
-					case 1: vec[1] = value; break;
-					case 2: vec[2] = value; break;
-					case 3: vec[3] = value; break;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				vec[0] = lerp(vec[0], value, w0);
+				vec[1] = lerp(vec[1], value, w1);
+				vec[2] = lerp(vec[2], value, w2);
+				vec[3] = lerp(vec[3], value, w3);
 			}
 			float3 mod289(float3 x)
 			{
@@ -7756,27 +7990,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyUnityFog(inout float3 col, float2 fogData)
 			{
-				float fogFactor = 1.0;
-				float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
-				if (unity_FogParams.z != unity_FogParams.w)
+				if (0.0 == 0)
 				{
-					fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					float fogFactor = 1.0;
+					float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
+					if (unity_FogParams.z != unity_FogParams.w)
+					{
+						fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					}
+					else if (fogData.y)
+					{
+						float exponent_val = unity_FogParams.x * depth;
+						fogFactor = exp2(-exponent_val * exponent_val);
+					}
+					else if (unity_FogParams.y != 0.0f)
+					{
+						float exponent = unity_FogParams.y * depth;
+						fogFactor = exp2(-exponent);
+					}
+					fixed3 appliedFogColor = unity_FogColor.rgb;
+					#if defined(UNITY_PASS_FORWARDADD)
+					appliedFogColor = fixed3(0, 0, 0);
+					#endif
+					col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 				}
-				else if (fogData.y)
-				{
-					float exponent_val = unity_FogParams.x * depth;
-					fogFactor = exp2(-exponent_val * exponent_val);
-				}
-				else if (unity_FogParams.y != 0.0f)
-				{
-					float exponent = unity_FogParams.y * depth;
-					fogFactor = exp2(-exponent);
-				}
-				fixed3 appliedFogColor = unity_FogColor.rgb;
-				#if defined(UNITY_PASS_FORWARDADD)
-				appliedFogColor = fixed3(0, 0, 0);
-				#endif
-				col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 			}
 			void applyReducedRenderClipDistance(inout VertexOut o)
 			{
@@ -7840,7 +8077,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				TRANSFER_SHADOW_CASTER_NOPOS(o, o.pos);
 				#endif
 				#endif
-				o.worldDir = float4(o.worldPos.xyz - _WorldSpaceCameraPos, dot(o.pos, CalculateFrustumCorrection()));
+				o.worldDir = dot(o.pos, CalculateFrustumCorrection());
 				if (0.0)
 				{
 					applyReducedRenderClipDistance(o);
@@ -7941,8 +8178,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				longitude = fwidth(phi) - 0.0001 < fwidth(phi_frac) ? phi : phi_frac;
 				longitude *= 2;
 				float2 sphereCoords = float2(longitude, latitude) * float2(1.0, 1.0 / UNITY_PI);
-				sphereCoords = float2(1.0, 1.0) - sphereCoords;
-				return (sphereCoords + float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).xy) * float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).zw;
+				return float2(1.0, 1.0) - sphereCoords;
 			}
 			float2 StereoPanoProjection(float3 coords)
 			{
@@ -8160,7 +8396,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				indirectLight.diffuse = max(indirectLight.diffuse + 0.0, 0);
 				#endif
 				poiLight.rampedLightMap = poiLight.nDotLSaturated;
-				poiLight.finalLighting = max(POI_BRDF_PBS(1, 0, 0, 0, poiMesh.normals[1], poiCam.viewDir, light, indirectLight).xyz, 0.0);
+				poiLight.finalLighting = max(POI_BRDF_PBS(1, 0, 0, 0, poiMesh.normals[1], poiCam.viewDir, light, indirectLight).xyz, _LightingMinLightBrightness);
 				#ifdef UNITY_PASS_FORWARDBASE
 				if (_UdonLightVolumeEnabled && 1.0)
 				{
@@ -8170,7 +8406,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					float3 L1b = 0;
 					#ifdef LIGHTMAP_ON
 					LightVolumeAdditiveSH(poiMesh.worldPos, L0, L1r, L1g, L1b);
-					poiLight.finalLighting += clamp(LightVolumeEvaluate(poiMesh.normals[1], L0, L1r, L1g, L1b), 0.0, 1.0);
+					poiLight.finalLighting += clamp(LightVolumeEvaluate(poiMesh.normals[1], L0, L1r, L1g, L1b), _LightingMinLightBrightness, _LightingCap);
 					#endif
 				}
 				#endif
@@ -8235,7 +8471,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				return p0;
 			}
-			float3 GetReflections(in PoiCam poiCam, in PoiLight pl, in PoiMesh poiMesh, float roughness, float ForceFallback, float LightFallback, samplerCUBE reflectionCube, float4 hdrData, float3 reflectionDir)
+			float3 GetReflections(in PoiCam poiCam, in PoiLight pl, in PoiMesh poiMesh, float perceptualRoughness, float ForceFallback, float LightFallback, TextureCube reflectionCube, float4 hdrData, float3 reflectionDir)
 			{
 				float3 reflections = 0;
 				float3 lighting = pl.finalLighting;
@@ -8245,19 +8481,31 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					if (SceneHasReflections())
 					{
 						#ifdef UNITY_PASS_FORWARDBASE
-						reflections = GetWorldReflections(reflectionDir, poiMesh.worldPos.xyz, roughness);
+						reflections = GetWorldReflections(reflectionDir, poiMesh.worldPos.xyz, perceptualRoughness);
 						#endif
 					}
 					else
 					{
 						#ifdef UNITY_PASS_FORWARDBASE
-						reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+						float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+						float mipLevel0 = floor(mipLevel);
+						float mipLevel1 = mipLevel0 + 1;
+						float mipLerp = frac(mipLevel);
+						float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+						float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+						reflections = lerp(sample0, sample1, mipLerp);
 						reflections = DecodeHDR(float4(reflections, 1), hdrData) * lerp(1, pl.finalLighting, LightFallback);
 						#endif
 						#ifdef POI_PASS_ADD
 						if (LightFallback)
 						{
-							reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+							float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+							float mipLevel0 = floor(mipLevel);
+							float mipLevel1 = mipLevel0 + 1;
+							float mipLerp = frac(mipLevel);
+							float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+							float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+							reflections = lerp(sample0, sample1, mipLerp);
 							reflections = DecodeHDR(float4(reflections, 1), hdrData) * pl.finalLighting;
 						}
 						#endif
@@ -8266,13 +8514,25 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				else
 				{
 					#ifdef UNITY_PASS_FORWARDBASE
-					reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+					float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+					float mipLevel0 = floor(mipLevel);
+					float mipLevel1 = mipLevel0 + 1;
+					float mipLerp = frac(mipLevel);
+					float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+					float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+					reflections = lerp(sample0, sample1, mipLerp);
 					reflections = DecodeHDR(float4(reflections, 1), hdrData) * lerp(1, pl.finalLighting, LightFallback);
 					#endif
 					#ifdef POI_PASS_ADD
 					if (LightFallback)
 					{
-						reflections = texCUBElod(reflectionCube, float4(reflectionDir, roughness * UNITY_SPECCUBE_LOD_STEPS));
+						float mipLevel = perceptualRoughness * UNITY_SPECCUBE_LOD_STEPS;
+						float mipLevel0 = floor(mipLevel);
+						float mipLevel1 = mipLevel0 + 1;
+						float mipLerp = frac(mipLevel);
+						float3 sample0 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel0);
+						float3 sample1 = reflectionCube.SampleLevel(sampler_linear_clamp, reflectionDir, mipLevel1);
+						reflections = lerp(sample0, sample1, mipLerp);
 						reflections = DecodeHDR(float4(reflections, 1), hdrData) * pl.finalLighting;
 					}
 					#endif
@@ -8387,12 +8647,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float reflectionMask = poiFragData.reflectionMask;
 				if (0.0 > 0)
 				{
-					metallic = customBlend(metallic, poiMods.globalMask[0.0 - 1], 2.0);
+					metallic = maskBlend(metallic, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				if (0.0 > 0)
 				{
-					smoothness = customBlend(smoothness, poiMods.globalMask[0.0 - 1], 2.0);
-					smoothness2 = customBlend(smoothness2, poiMods.globalMask[0.0 - 1], 2.0);
+					smoothness = maskBlend(smoothness, poiMods.globalMask[0.0 - 1], 2.0);
+					smoothness2 = maskBlend(smoothness2, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				if (0.0 > 0)
 				{
@@ -8486,7 +8746,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				float surfaceReduction = (1.0 / (brdfRoughness * brdfRoughness + 1.0));
 				float grazingTerm = saturate(smoothness + (1 - omr));
-				float3 reflCol = GetReflections(poiCam, poiLight, poiMesh, roughness, 0.0, 1.0, _MochieReflCube, _MochieReflCube_HDR, pbrReflectionDir);
+				float3 reflCol = GetReflections(poiCam, poiLight, poiMesh, percepRough, 0.0, 1.0, _MochieReflCube, _MochieReflCube_HDR, pbrReflectionDir);
 				reflections = surfaceReduction * reflCol * FresnelLerp(specCol, specCol + lerp(specCol, 1, 0.5) * 0.5, pbrNDotV) * SFVisibility(brdfRoughness, poiLight.directColor, pbrNDotV, 0.0);
 				reflections *= poiThemeColor(poiMods, float4(1,1,1,1), 0.0);
 				reflections *= reflectionMask;
@@ -8640,15 +8900,21 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiCam.posScreenPixels = calcPixelScreenUVs(poiCam.posScreenSpace);
 				poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
-				poiCam.worldDirection.w = i.worldDir.w;
+				poiCam.worldDirection.w = i.worldDir;
 				calculateGlobalThemes(poiMods);
+				if (_UdonForceSceneLighting)
+				{
+					_LightingMinLightBrightness = 0;
+					_LightingCapEnabled = 0;
+					_LightingMonochromatic = 0;
+				}
 				poiLight.finalLightAdd = 0;
 				#ifdef UNITY_PASS_FORWARDBASE
-				float3 L0 =  float3(0,0,0);
-				float3 L1r = float3(0,0,0);
-				float3 L1g = float3(0,0,0);
-				float3 L1b = float3(0,0,0);
-				if(_UdonLightVolumeEnabled && 1.0)
+				float3 L0 = float3(0, 0, 0);
+				float3 L1r = float3(0, 0, 0);
+				float3 L1g = float3(0, 0, 0);
+				float3 L1b = float3(0, 0, 0);
+				if (_UdonLightVolumeEnabled && 1.0)
 				{
 					LightVolumeSH(poiMesh.worldPos, L0, L1r, L1g, L1b);
 					PoiSHAr = float4(L1r, L0.r);
@@ -8660,7 +8926,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					PoiSHC = 0;
 				}
 				#endif
-				#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGAOMAPS)
 				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 0.0)), lerp(1, AOMaps.b, 0.0)), lerp(1, AOMaps.a, 0.0));
 				#else
@@ -8670,7 +8936,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				{
 					poiLight.occlusion = maskBlend(poiLight.occlusion, poiMods.globalMask[0.0 - 1], 2.0);
 				}
-				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS)
 				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				#ifndef POI_PASS_ADD
 				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
@@ -8684,7 +8950,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				{
 					poiLight.detailShadow = maskBlend(poiLight.detailShadow, poiMods.globalMask[0.0 - 1], 2.0);
 				}
-				#if defined(PROP_LIGHTINGSHADOWMASKS) || !defined(OPTIMIZER_ENABLED)
+				#if defined(PROP_LIGHTINGSHADOWMASKS)
 				float4 ShadowMasks = POI2D_SAMPLER_PAN(_LightingShadowMasks, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
 				poiLight.shadowMask = lerp(1, ShadowMasks.r, 1.0) * lerp(1, ShadowMasks.g, 0.0) * lerp(1, ShadowMasks.b, 0.0) * lerp(1, ShadowMasks.a, 0.0);
 				#else
@@ -8794,7 +9060,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float lightMapMode = 0.0;
 				if (0.0 == 0)
 				{
-					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + 0.2 * PoiSHAr.xyz + 0.333333 * PoiSHAg.xyz + 0.333333 * PoiSHAb.xyz + 0.333333;
+					poiLight.direction = calculateluminance(_LightColor0.rgb) * _WorldSpaceLightPos0.xyz + (PoiSHAr.xyz + PoiSHAg.xyz + PoiSHAb.xyz) / 3.0;
 				}
 				if (0.0 == 1 || 0.0 == 2)
 				{
@@ -8839,11 +9105,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.direction = normalize(poiLight.direction);
 				poiLight.attenuationStrength = 0.0;
 				poiLight.attenuation = 1;
+				#ifndef POI_PASS_LILFUR
 				if (!all(_LightColor0.rgb == 0.0))
 				{
 					UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 					poiLight.attenuation *= attenuation;
 				}
+				#endif
 				#if defined(HANDLE_SHADOWS_BLENDING_IN_GI)
 				half bakedAtten = UnitySampleBakedOcclusion(poiMesh.lightmapUV.xy, poiMesh.worldPos);
 				float zDist = dot(_WorldSpaceCameraPos - poiMesh.worldPos, UNITY_MATRIX_V[2].xyz);
@@ -8901,7 +9169,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				if (lightMapMode == 4)
 				{
-					#if defined(PROP_LIGHTDATASDFMAP) || !defined(OPTIMIZER_ENABLED)
+					#if defined(PROP_LIGHTDATASDFMAP)
 					float2 lightDataSDFMap = 1;
 					if (0.0 > 0)
 					{
@@ -8936,19 +9204,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.indirectColor = max(poiLight.indirectColor, 0.0001);
 				if (0.0 == 3)
 				{
-					poiLight.directColor = max(poiLight.directColor, 0.0);
+					poiLight.directColor = max(poiLight.directColor, _LightingMinLightBrightness);
 				}
 				else
 				{
-					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, (0.0 * rcp(calculateluminance(poiLight.directColor)))));
-					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, (0.0 * rcp(calculateluminance(poiLight.indirectColor)))));
+					poiLight.directColor = max(poiLight.directColor, poiLight.directColor * min(10000, (_LightingMinLightBrightness * rcp(calculateluminance(poiLight.directColor)))));
+					poiLight.indirectColor = max(poiLight.indirectColor, poiLight.indirectColor * min(10000, (_LightingMinLightBrightness * rcp(calculateluminance(poiLight.indirectColor)))));
 				}
-				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
-				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
-				if (1.0)
+				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), _LightingMonochromatic);
+				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), _LightingMonochromatic);
+				if (_LightingCapEnabled)
 				{
-					poiLight.directColor = min(poiLight.directColor, 1.0);
-					poiLight.indirectColor = min(poiLight.indirectColor, 1.0);
+					poiLight.directColor = min(poiLight.directColor, _LightingCap);
+					poiLight.indirectColor = min(poiLight.indirectColor, _LightingCap);
 				}
 				if (0.0)
 				{
@@ -8983,10 +9251,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiLight.attenuation = (lightCoord.z > 0) * UnitySpotCookie(lightCoord) * UnitySpotAttenuate(lightCoord.xyz);
 				#endif
 				#else
+				#ifndef POI_PASS_LILFUR
 				UNITY_LIGHT_ATTENUATION(attenuation, i, poiMesh.worldPos)
 				poiLight.attenuation = attenuation;
 				#endif
+				#endif
+				#ifndef POI_PASS_LILFUR
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
+				#endif
 				poiLight.attenuationStrength = 1.0;
 				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
@@ -9024,12 +9296,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				MetallicAndSpecularFragDataInit(poiFragData, poiMesh, poiMods);
 				#endif
 				poiFragData.baseColor = mainTexture.rgb;
-				#ifndef POI_PASS_BASETWO
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
 				poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
 				#else
-				poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
-				poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				if(_TwoPassOverrideFirstPassColor)
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
+					poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				}
+				else
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
+					poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
+				}
 				#endif
 				if (2.0)
 				{
@@ -9090,12 +9370,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				#ifdef MOCHIE_PBR
 				MochieBRDF(poiFragData, poiCam, poiLight, poiMesh, poiMods);
 				#endif
-				#ifndef POI_PASS_BASETWO
+				poiFragData.finalColor += poiLight.finalLightAdd;
+				#ifndef POI_PASS_LILFUR
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				poiFragData.finalColor += poiLight.finalLightAdd;
+				#endif
 				if (0.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
@@ -9144,6 +9426,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
  #define MOCHIE_PBR 
  #define POI_EMISSION_1 
  #define POI_LTCGI 
+ #define PROP_LIGHTINGAOMAPS 
  #define VIGNETTE_MASKED 
  #define _EMISSION 
  #define _LIGHTINGMODE_REALISTIC 
@@ -9356,6 +9639,19 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float2 uv1 : TEXCOORD1;
 				float2 uv2 : TEXCOORD2;
 				float2 uv3 : TEXCOORD3;
+				uint vertexId : SV_VertexID;
+				UNITY_VERTEX_INPUT_INSTANCE_ID
+			};
+			struct tessellatedAppData
+			{
+				float4 vertex : POSITION;
+				float3 normal : NORMAL;
+				float4 tangent : TANGENT;
+				float4 color : COLOR;
+				float2 uv0 : TEXCOORD0;
+				float2 uv1 : TEXCOORD1;
+				float2 uv2 : TEXCOORD2;
+				float2 uv3 : TEXCOORD3;
 				uint vertexId : TEXCOORD4;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
@@ -9369,7 +9665,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				float4 localPos : TEXCOORD5;
 				float4 vertexColor : TEXCOORD6;
 				float4 lightmapUV : TEXCOORD7;
-				float4 worldDir : TEXCOORD8;
+				float worldDir : TEXCOORD8;
 				float2 fogData: TEXCOORD10;
 				UNITY_SHADOW_COORDS(12)
 				UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -9711,36 +10007,33 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float2 vertexUV(in VertexOut o, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return o.uv[0].xy;
-					case 1:
-					return o.uv[0].zw;
-					case 2:
-					return o.uv[1].xy;
-					case 3:
-					return o.uv[1].zw;
-					default:
-					return o.uv[0].xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
 			}
 			float2 vertexUV(in appdata v, int index)
 			{
-				switch(index)
-				{
-					case 0:
-					return v.uv0.xy;
-					case 1:
-					return v.uv1.xy;
-					case 2:
-					return v.uv2.xy;
-					case 3:
-					return v.uv3.xy;
-					default:
-					return v.uv0.xy;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return v.uv0.xy * w0 + v.uv1.xy * w1 + v.uv2.xy * w2 + v.uv3.xy * w3;
 			}
+			#ifdef POI_PASS_LILFUR
+			float2 vertexUV(in PoiGeoToFragLilFur o, int index)
+			{
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				return o.uv[0].xy * w0 + o.uv[0].zw * w1 + o.uv[1].xy * w2 + o.uv[1].zw * w3;
+			}
+			#endif
 			float calculateluminance(float3 color)
 			{
 				return color.r * 0.299 + color.g * 0.587 + color.b * 0.114;
@@ -9753,6 +10046,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			float dotToDegrees(float3 a, float3 b)
 			{
 				return dotToDegrees(dot(normalize(a), normalize(b)));
+			}
+			float poiFastAtan(float x)
+			{
+				return x * (abs(x) * (1.5707963 * abs(x) - 0.00507668) + 0.420691) /
+				(abs(x) * (abs(x) * (0.633387806 + abs(x)) + 0.671041944) + 0.215192627);
 			}
 			float _VRChatCameraMode;
 			float _VRChatMirrorMode;
@@ -9993,38 +10291,47 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 customBlend(float3 base, float3 blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 1: output = lerp(base, blendDarken(base, blend), alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float3 r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float3 r1 = lerp(base, blendDarken(base, blend), alpha);     // Darken (1)
+				float3 r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float3 r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float3 r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float3 r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float3 r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float3 r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float3 r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w1 = saturate(1 - abs(t - 1));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r1*w1 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			float3 customBlend(float base, float blend, float blendType, float alpha = 1)
 			{
-				float3 output = base;
-				switch(blendType)
-				{
-					case 0: output = lerp(base, blend, alpha); break;
-					case 2: output = base * lerp(1, blend, alpha); break;
-					case 5: output = lerp(base, blendLighten(base, blend), alpha); break;
-					case 6: output = lerp(base, blendScreen(base, blend), alpha); break;
-					case 7: output = blendSubtract(base, blend * alpha); break;
-					case 8: output = lerp(base, blendLinearDodge(base, blend), alpha); break;
-					case 9: output = lerp(base, blendOverlay(base, blend), alpha); break;
-					case 20: output = lerp(base, blendMixed(base, blend), alpha); break;
-					default: output = 0; break;
-				}
-				return output;
+				float r0 = lerp(base, blend, alpha);                        // Normal (0)
+				float r2 = base * lerp(1, blend, alpha);                    // Multiply (2)
+				float r5 = lerp(base, blendLighten(base, blend), alpha);    // Lighten (5)
+				float r6 = lerp(base, blendScreen(base, blend), alpha);     // Screen (6)
+				float r7 = blendSubtract(base, blend * alpha);              // Subtract (7)
+				float r8 = lerp(base, blendLinearDodge(base, blend), alpha);// Linear Dodge (8)
+				float r9 = lerp(base, blendOverlay(base, blend), alpha);    // Overlay (9)
+				float r20 = lerp(base, blendMixed(base, blend), alpha);     // Mixed (20)
+				float t = blendType;
+				float w0 = saturate(1 - abs(t - 0));
+				float w2 = saturate(1 - abs(t - 2));
+				float w5 = saturate(1 - abs(t - 5));
+				float w6 = saturate(1 - abs(t - 6));
+				float w7 = saturate(1 - abs(t - 7));
+				float w8 = saturate(1 - abs(t - 8));
+				float w9 = saturate(1 - abs(t - 9));
+				float w20 = saturate(1 - abs(t - 20));
+				return r0*w0 + r2*w2 + r5*w5 + r6*w6 + r7*w7 + r8*w8 + r9*w9 + r20*w20;
 			}
 			#define REPLACE 0
 			#define SUBSTRACT 1
@@ -10036,18 +10343,24 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			#define ADD 7
 			float maskBlend(float baseMask, float blendMask, float blendType)
 			{
-				float output = 0;
-				switch(blendType)
-				{
-					case REPLACE: output = blendMask; break;
-					case SUBSTRACT: output = baseMask - blendMask; break;
-					case MULTIPLY: output = baseMask * blendMask; break;
-					case DIVIDE: output = baseMask / blendMask; break;
-					case MIN: output = min(baseMask, blendMask); break;
-					case MAX: output = max(baseMask, blendMask); break;
-					case AVERAGE: output = (baseMask + blendMask) * 0.5; break;
-					case ADD: output = baseMask + blendMask; break;
-				}
+				float replace = blendMask;
+				float subtract = baseMask - blendMask;
+				float multiply = baseMask * blendMask;
+				float divide = baseMask / max(blendMask, 0.0001);
+				float minVal = min(baseMask, blendMask);
+				float maxVal = max(baseMask, blendMask);
+				float average = (baseMask + blendMask) * 0.5;
+				float add = baseMask + blendMask;
+				float t = blendType + 0.5;
+				float w0 = step(t, 1);
+				float w1 = step(1, t) * step(t, 2);
+				float w2 = step(2, t) * step(t, 3);
+				float w3 = step(3, t) * step(t, 4);
+				float w4 = step(4, t) * step(t, 5);
+				float w5 = step(5, t) * step(t, 6);
+				float w6 = step(6, t) * step(t, 7);
+				float w7 = step(7, t);
+				float output = replace * w0 + subtract * w1 + multiply * w2 + divide * w3 + minVal * w4 + maxVal * w5 + average * w6 + add * w7;
 				return saturate(output);
 			}
 			float globalMaskBlend(float baseMask, float globalMaskIndex, float blendType, PoiMods poiMods)
@@ -10061,37 +10374,59 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 					return maskBlend(baseMask, poiMods.globalMask[globalMaskIndex - 1], blendType);
 				}
 			}
-			float random(float2 p)
+			inline float poiRand(float2 co)
 			{
-				return frac(sin(dot(p, float2(12.9898, 78.2383))) * 43758.5453123);
+				float3 p3 = frac(float3(co.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.x + p3.y) * p3.z);
 			}
-			float2 random2(float2 p)
+			inline float4 poiRand4(float2 seed)
 			{
-				return frac(sin(float2(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				float2 a = frac((p3.xx + p3.yz) * p3.zy);
+				float2 s2 = seed + 37.0;
+				float3 q3 = frac(float3(s2.xyx) * 0.1031);
+				q3 += dot(q3, q3.yzx + 33.33);
+				float2 b = frac((q3.xx + q3.yz) * q3.zy);
+				return float4(a, b);
 			}
-			float3 random3(float2 p)
+			inline float2 poiRand2(float seed)
 			{
-				return frac(sin(float3(dot(p, float2(127.1, 311.7)), dot(p, float2(269.5, 183.3)), dot(p, float2(248.3, 315.9)))) * 43758.5453);
+				float2 x = float2(seed, seed * 1.3);
+				float3 p3 = frac(float3(x.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 random3(float3 p)
+			inline float2 poiRand2(float2 seed)
 			{
-				return frac(sin(float3(dot(p, float3(127.1, 311.7, 248.6)), dot(p, float3(269.5, 183.3, 423.3)), dot(p, float3(248.3, 315.9, 184.2)))) * 43758.5453);
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xx + p3.yz) * p3.zy);
 			}
-			float3 randomFloat3(float2 Seed, float maximum)
+			inline float poiRand3(float seed)
 			{
-				return (.5 + float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed), float2(12.9898, 78.233))) * 43758.5453)
-				) * .5) * (maximum);
+				float p = frac(seed * 0.1031);
+				p *= p + 33.33;
+				p *= p + p;
+				return frac(p);
 			}
-			float3 randomFloat3Range(float2 Seed, float Range)
+			inline float3 poiRand3(float2 seed)
 			{
-				return (float3(
-				frac(sin(dot(Seed.xy, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(Seed.yx, float2(12.9898, 78.233))) * 43758.5453),
-				frac(sin(dot(float2(Seed.x * Seed.y, Seed.y + Seed.x), float2(12.9898, 78.233))) * 43758.5453)
-				) * 2 - 1) * Range;
+				float3 p3 = frac(float3(seed.xyx) * 0.1031);
+				p3 += dot(p3, p3.yzx + 33.33);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3(float3 seed)
+			{
+				float3 p3 = frac(seed * 0.1031);
+				p3 += dot(p3, p3.zyx + 31.32);
+				return frac((p3.xxy + p3.yzz) * p3.zyx);
+			}
+			inline float3 poiRand3Range(float2 Seed, float Range)
+			{
+				float3 r = poiRand3(Seed);
+				return (r * 2.0 - 1.0) * Range;
 			}
 			float3 randomFloat3WiggleRange(float2 Seed, float Range, float wiggleSpeed, float timeOffset)
 			{
@@ -10239,14 +10574,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				float3 oklab = linear_srgb_to_oklab(color);
 				float chroma = length(oklab.yz);
-				if (chroma < 1e-5)
-				{
-					return color;
-				}
-				float hue = atan2(oklab.z, oklab.y);
-				hue = shift * TWO_PI + hue * selectOrShift;  // Add the hue shift
-				oklab.y = cos(hue) * chroma;
-				oklab.z = sin(hue) * chroma;
+				oklab.y = selectOrShift > 0.5 ? oklab.y : chroma;
+				oklab.z = selectOrShift > 0.5 ? oklab.z : 0;
+				float s, c;
+				sincos(shift * TWO_PI, s, c);
+				oklab.yz = float2(c * oklab.y - s * oklab.z, s * oklab.y + c * oklab.z);
 				return oklab_to_linear_srgb(oklab);
 			}
 			float3 hueShiftHSV(float3 color, float hueOffset, float selectOrShift)
@@ -10257,15 +10589,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			float3 hueShift(float3 color, float shift, float ColorSpace, float selectOrShift)
 			{
-				switch(ColorSpace)
-				{
-					case 0.0:
-					return hueShiftOKLab(color, shift, selectOrShift);
-					case 1.0:
-					return hueShiftHSV(color, shift, selectOrShift);
-					default:
-					return float3(1.0, 0.0, 0.0);
-				}
+				float3 oklab = hueShiftOKLab(color, shift, selectOrShift);
+				float3 hsv = hueShiftHSV(color, shift, selectOrShift);
+				float w = saturate(ColorSpace);
+				return lerp(oklab, hsv, w);
 			}
 			float4 hueShift(float4 color, float shift, float ColorSpace, float selectOrShift)
 			{
@@ -10329,6 +10656,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				#endif
 				return _VRChatMirrorMode == 1 ? _VRChatMirrorCameraPos : _WorldSpaceCameraPos;
 			}
+			#ifdef POI_AUDIOLINK
+			inline int poiALBandPass(int bandIdx)
+			{
+				bandIdx = clamp(bandIdx, 0, 3);
+				return bandIdx == 0 ? ALPASS_AUDIOBASS : bandIdx == 1 ? ALPASS_AUDIOLOWMIDS : bandIdx == 2 ? ALPASS_AUDIOHIGHMIDS : ALPASS_AUDIOTREBLE;
+			}
+			#endif
 			float2 calcPixelScreenUVs(half4 grabPos)
 			{
 				half2 uv = grabPos.xy / (grabPos.w + 0.0000000001);
@@ -10802,6 +11136,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			{
 				return 1.f / (z / UNITY_MATRIX_P._34 + correctionFactor);
 			}
+			float evalRamp4(float time, float4 ramp)
+			{
+				return lerp(ramp.x, ramp.y, smoothstep(ramp.z, ramp.w, time));
+			}
 			float2 sharpSample(float4 texelSize, float2 p)
 			{
 				p = p * texelSize.zw;
@@ -10812,36 +11150,67 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyToGlobalMask(inout PoiMods poiMods, int index, int blendType, float val)
 			{
-				float valBlended = saturate(maskBlend(poiMods.globalMask[index], val, blendType));
-				switch(index)
-				{
-					case 0: poiMods.globalMask[0] = valBlended; break;
-					case 1: poiMods.globalMask[1] = valBlended; break;
-					case 2: poiMods.globalMask[2] = valBlended; break;
-					case 3: poiMods.globalMask[3] = valBlended; break;
-					case 4: poiMods.globalMask[4] = valBlended; break;
-					case 5: poiMods.globalMask[5] = valBlended; break;
-					case 6: poiMods.globalMask[6] = valBlended; break;
-					case 7: poiMods.globalMask[7] = valBlended; break;
-					case 8: poiMods.globalMask[8] = valBlended; break;
-					case 9: poiMods.globalMask[9] = valBlended; break;
-					case 10: poiMods.globalMask[10] = valBlended; break;
-					case 11: poiMods.globalMask[11] = valBlended; break;
-					case 12: poiMods.globalMask[12] = valBlended; break;
-					case 13: poiMods.globalMask[13] = valBlended; break;
-					case 14: poiMods.globalMask[14] = valBlended; break;
-					case 15: poiMods.globalMask[15] = valBlended; break;
-				}
+				float v0 = saturate(maskBlend(poiMods.globalMask[0], val, blendType));
+				float v1 = saturate(maskBlend(poiMods.globalMask[1], val, blendType));
+				float v2 = saturate(maskBlend(poiMods.globalMask[2], val, blendType));
+				float v3 = saturate(maskBlend(poiMods.globalMask[3], val, blendType));
+				float v4 = saturate(maskBlend(poiMods.globalMask[4], val, blendType));
+				float v5 = saturate(maskBlend(poiMods.globalMask[5], val, blendType));
+				float v6 = saturate(maskBlend(poiMods.globalMask[6], val, blendType));
+				float v7 = saturate(maskBlend(poiMods.globalMask[7], val, blendType));
+				float v8 = saturate(maskBlend(poiMods.globalMask[8], val, blendType));
+				float v9 = saturate(maskBlend(poiMods.globalMask[9], val, blendType));
+				float v10 = saturate(maskBlend(poiMods.globalMask[10], val, blendType));
+				float v11 = saturate(maskBlend(poiMods.globalMask[11], val, blendType));
+				float v12 = saturate(maskBlend(poiMods.globalMask[12], val, blendType));
+				float v13 = saturate(maskBlend(poiMods.globalMask[13], val, blendType));
+				float v14 = saturate(maskBlend(poiMods.globalMask[14], val, blendType));
+				float v15 = saturate(maskBlend(poiMods.globalMask[15], val, blendType));
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				float w4 = saturate(1 - abs(i - 4));
+				float w5 = saturate(1 - abs(i - 5));
+				float w6 = saturate(1 - abs(i - 6));
+				float w7 = saturate(1 - abs(i - 7));
+				float w8 = saturate(1 - abs(i - 8));
+				float w9 = saturate(1 - abs(i - 9));
+				float w10 = saturate(1 - abs(i - 10));
+				float w11 = saturate(1 - abs(i - 11));
+				float w12 = saturate(1 - abs(i - 12));
+				float w13 = saturate(1 - abs(i - 13));
+				float w14 = saturate(1 - abs(i - 14));
+				float w15 = saturate(1 - abs(i - 15));
+				poiMods.globalMask[0] = lerp(poiMods.globalMask[0], v0, w0);
+				poiMods.globalMask[1] = lerp(poiMods.globalMask[1], v1, w1);
+				poiMods.globalMask[2] = lerp(poiMods.globalMask[2], v2, w2);
+				poiMods.globalMask[3] = lerp(poiMods.globalMask[3], v3, w3);
+				poiMods.globalMask[4] = lerp(poiMods.globalMask[4], v4, w4);
+				poiMods.globalMask[5] = lerp(poiMods.globalMask[5], v5, w5);
+				poiMods.globalMask[6] = lerp(poiMods.globalMask[6], v6, w6);
+				poiMods.globalMask[7] = lerp(poiMods.globalMask[7], v7, w7);
+				poiMods.globalMask[8] = lerp(poiMods.globalMask[8], v8, w8);
+				poiMods.globalMask[9] = lerp(poiMods.globalMask[9], v9, w9);
+				poiMods.globalMask[10] = lerp(poiMods.globalMask[10], v10, w10);
+				poiMods.globalMask[11] = lerp(poiMods.globalMask[11], v11, w11);
+				poiMods.globalMask[12] = lerp(poiMods.globalMask[12], v12, w12);
+				poiMods.globalMask[13] = lerp(poiMods.globalMask[13], v13, w13);
+				poiMods.globalMask[14] = lerp(poiMods.globalMask[14], v14, w14);
+				poiMods.globalMask[15] = lerp(poiMods.globalMask[15], v15, w15);
 			}
 			void assignValueToVectorFromIndex(inout float4 vec, int index, float value)
 			{
-				switch(index)
-				{
-					case 0: vec[0] = value; break;
-					case 1: vec[1] = value; break;
-					case 2: vec[2] = value; break;
-					case 3: vec[3] = value; break;
-				}
+				float i = index;
+				float w0 = saturate(1 - abs(i - 0));
+				float w1 = saturate(1 - abs(i - 1));
+				float w2 = saturate(1 - abs(i - 2));
+				float w3 = saturate(1 - abs(i - 3));
+				vec[0] = lerp(vec[0], value, w0);
+				vec[1] = lerp(vec[1], value, w1);
+				vec[2] = lerp(vec[2], value, w2);
+				vec[3] = lerp(vec[3], value, w3);
 			}
 			float3 mod289(float3 x)
 			{
@@ -10916,27 +11285,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 			}
 			void applyUnityFog(inout float3 col, float2 fogData)
 			{
-				float fogFactor = 1.0;
-				float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
-				if (unity_FogParams.z != unity_FogParams.w)
+				if (0.0 == 0)
 				{
-					fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					float fogFactor = 1.0;
+					float depth = UNITY_Z_0_FAR_FROM_CLIPSPACE(fogData.x);
+					if (unity_FogParams.z != unity_FogParams.w)
+					{
+						fogFactor = depth * unity_FogParams.z + unity_FogParams.w;
+					}
+					else if (fogData.y)
+					{
+						float exponent_val = unity_FogParams.x * depth;
+						fogFactor = exp2(-exponent_val * exponent_val);
+					}
+					else if (unity_FogParams.y != 0.0f)
+					{
+						float exponent = unity_FogParams.y * depth;
+						fogFactor = exp2(-exponent);
+					}
+					fixed3 appliedFogColor = unity_FogColor.rgb;
+					#if defined(UNITY_PASS_FORWARDADD)
+					appliedFogColor = fixed3(0, 0, 0);
+					#endif
+					col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 				}
-				else if (fogData.y)
-				{
-					float exponent_val = unity_FogParams.x * depth;
-					fogFactor = exp2(-exponent_val * exponent_val);
-				}
-				else if (unity_FogParams.y != 0.0f)
-				{
-					float exponent = unity_FogParams.y * depth;
-					fogFactor = exp2(-exponent);
-				}
-				fixed3 appliedFogColor = unity_FogColor.rgb;
-				#if defined(UNITY_PASS_FORWARDADD)
-				appliedFogColor = fixed3(0, 0, 0);
-				#endif
-				col.rgb = lerp(appliedFogColor, col.rgb, saturate(fogFactor));
 			}
 			void applyReducedRenderClipDistance(inout VertexOut o)
 			{
@@ -11000,7 +11372,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				TRANSFER_SHADOW_CASTER_NOPOS(o, o.pos);
 				#endif
 				#endif
-				o.worldDir = float4(o.worldPos.xyz - _WorldSpaceCameraPos, dot(o.pos, CalculateFrustumCorrection()));
+				o.worldDir = dot(o.pos, CalculateFrustumCorrection());
 				if (0.0)
 				{
 					applyReducedRenderClipDistance(o);
@@ -11088,8 +11460,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				longitude = fwidth(phi) - 0.0001 < fwidth(phi_frac) ? phi : phi_frac;
 				longitude *= 2;
 				float2 sphereCoords = float2(longitude, latitude) * float2(1.0, 1.0 / UNITY_PI);
-				sphereCoords = float2(1.0, 1.0) - sphereCoords;
-				return (sphereCoords + float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).xy) * float4(0, 1 - unity_StereoEyeIndex, 1, 1.0).zw;
+				return float2(1.0, 1.0) - sphereCoords;
 			}
 			float2 StereoPanoProjection(float3 coords)
 			{
@@ -11268,14 +11639,22 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				poiCam.posScreenPixels = calcPixelScreenUVs(poiCam.posScreenSpace);
 				poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
-				poiCam.worldDirection.w = i.worldDir.w;
+				poiCam.worldDirection.w = i.worldDir;
 				poiFragData.baseColor = mainTexture.rgb;
-				#ifndef POI_PASS_BASETWO
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
 				poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
 				#else
-				poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
-				poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				if(_TwoPassOverrideFirstPassColor)
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, _TwoPassColor.rgb, _TwoPassColorThemeIndex);
+					poiFragData.alpha = mainTexture.a * _TwoPassColor.a;
+				}
+				else
+				{
+					poiFragData.baseColor *= poiThemeColor(poiMods, float4(1,1,1,1).rgb, 0.0);
+					poiFragData.alpha = mainTexture.a * float4(1,1,1,1).a;
+				}
 				#endif
 				if (2.0)
 				{
@@ -11293,10 +11672,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/8d096ed314aac224a92a8913d5cd02e4"
 				}
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
 				poiFragData.finalColor = poiFragData.baseColor;
-				#ifndef POI_PASS_BASETWO
+				#ifndef POI_PASS_LILFUR
+				#if !defined(POI_PASS_BASETWO) && !defined(POI_PASS_ADDTWO)
 				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
+				#endif
 				#endif
 				if (0.0 == POI_MODE_OPAQUE)
 				{
