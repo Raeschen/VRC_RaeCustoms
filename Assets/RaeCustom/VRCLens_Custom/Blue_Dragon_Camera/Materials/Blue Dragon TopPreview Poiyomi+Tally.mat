@@ -8,32 +8,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blue Dragon TopPreview Poiyomi+Tally
-  m_Shader: {fileID: 4800000, guid: 5fc5a6698fb6bfc48989427048337729, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6308d95844e18164b9f8745ac4a147c9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - BSSBLOOMFOGTYPE_HEIGHT
-  - MOCHIE_PBR
-  - POI_EMISSION_1
-  - POI_LTCGI
-  - PROP_LIGHTINGAOMAPS
-  - VIGNETTE_MASKED
-  - _EMISSION
-  - _LIGHTINGMODE_REALISTIC
-  - _RIM2STYLE_POIYOMI
-  - _RIMSTYLE_POIYOMI
-  - _STOCHASTICMODE_DELIOT_HEITZ
-  - _STYLIZEDREFLECTIONMODE_UNITYCHAN
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 8d096ed314aac224a92a8913d5cd02e4,bfdf87dfe53a28c45bf853462fe7b6d5
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT MOCHIE_PBR POI_EMISSION_1 POI_LTCGI
-      PROP_LIGHTINGAOMAPS VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _STYLIZEDREFLECTIONMODE_UNITYCHAN
+    AllLockedGUIDS: bfdf87dfe53a28c45bf853462fe7b6d5,8d096ed314aac224a92a8913d5cd02e4
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 9444ce77bf4418748b1e8591b9d97f85
     RenderType: Opaque

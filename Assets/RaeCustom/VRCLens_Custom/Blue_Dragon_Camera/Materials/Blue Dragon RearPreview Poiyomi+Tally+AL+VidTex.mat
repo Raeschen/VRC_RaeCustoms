@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blue Dragon RearPreview Poiyomi+Tally+AL+VidTex
-  m_Shader: {fileID: 4800000, guid: a8df1fdc828206a459923a7e0c5cc099, type: 3}
+  m_Shader: {fileID: 4800000, guid: ecf537357faf2ec4195aa31591561ca0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,7 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 6a2eea1af3f464d46942d9cdcd4e9357,d35fdefc5e21dac429903a8c11ffae8a
+    AllLockedGUIDS: b924af8c9e7ad2540b1a2e9516158413,9688d440086eba149ae8cc2538c2d32c,b924af8c9e7ad2540b1a2e9516158413,9688d440086eba149ae8cc2538c2d32c,d35fdefc5e21dac429903a8c11ffae8a,6a2eea1af3f464d46942d9cdcd4e9357
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 9444ce77bf4418748b1e8591b9d97f85
     RenderType: Opaque
