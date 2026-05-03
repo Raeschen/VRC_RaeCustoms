@@ -6,10 +6,12 @@ PREREQUISITES:
 -Poiyomi's Toon Shader
 
 NOTES:
-- This pack consists of three parts;
+- This pack consists of several parts;
 -- VRCLens "Blue Dragon" Camera model with Tally Light
 -- VRCLens "Sync Fix" tweak
 -- VRCLens "Smooth zoom" tweak
+-- VRCLens "Rootmount", a physbone-stabilised mount that follows your avatar root, can be moved, and can be hand puppetted.
+-- VRCLens OSCControl - Control the VRCLens camera with an xbox (Or any other xinput device) controller. Requires an app to translate the controller into OSC.
 - Each part is optional and not reliant on other parts.
 - "Vector3()" values can be directly copied and pasted into XYZ fields to fill all three values at once.
 - Usage of VRCFury "Parameter Compressor" is fine and shouldn't cause issues. Recommended if you're low on synced parameters
