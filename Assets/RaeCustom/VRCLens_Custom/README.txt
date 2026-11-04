@@ -31,8 +31,8 @@ INSTALLATION:
 ====================================================================
 
 INFO:
-Top-preview mesh:1458 Tris
-Rear-preview mesh:1466 Tris
+Top-preview mesh:1426 Tris
+Rear-preview mesh:1452 Tris
 1 Material
 Preconfigured Prefabs for VRCTally + shaders
 
