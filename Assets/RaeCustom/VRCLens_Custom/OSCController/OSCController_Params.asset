@@ -19,108 +19,205 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: OSCC_turbo
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: OSCC_focus_manual
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: OSCC_focus_saved
     valueType: 1
     saved: 0
     defaultValue: 0.5
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCLZoomRadial
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCLFocusRadial
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
+  - name: VRCLExposureRadial
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputLeftThumbStickX
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputLeftThumbStickY
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputRightThumbStickX
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputRightThumbStickY
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputLeftTrigger
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputRightTrigger
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 8
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputLeftBumper
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputRightBumper
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputAButton
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputBButton
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputXButton
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputYButton
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputLeftDPad
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputRightDPad
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputUpDPad
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: XInputDownDPad
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 0
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
