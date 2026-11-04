@@ -165,7 +165,12 @@ INFO:
 - Right Thumbstick: Pitch/Yaw
 - Left/Right triggers: Up/Down
 - Left/Right bumpers: Zoom Out/In
+- A button: Auto/Manual Focus toggle
 - B button: toggle Turbo Speed on/off
+- X button: Toggle Focus Modes
+- Y button: Toggle DOF Modes
+- D Pad Up/Dn: Manual Focus Out/In
+- D Pad Left/Right: Exposure Down/Up
 - REQUIRES SyncFix to drive the lens stealther (Lens automatically stealths for remote users when activating OSCcontrol)
 - Current version designed for VRCLens v1.10.0
 
