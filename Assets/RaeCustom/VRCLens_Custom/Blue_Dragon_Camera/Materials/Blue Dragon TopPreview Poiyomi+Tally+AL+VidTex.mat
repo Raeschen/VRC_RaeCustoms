@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blue Dragon TopPreview Poiyomi+Tally+AL+VidTex
-  m_Shader: {fileID: 4800000, guid: b591247cfbc55f440b9f93a0370ede79, type: 3}
+  m_Shader: {fileID: 4800000, guid: 3f76d7d0f22a5644d9f0de5a3d9bed12, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -32,7 +32,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 6a2eea1af3f464d46942d9cdcd4e9357,d35fdefc5e21dac429903a8c11ffae8a
+    AllLockedGUIDS: 6a2eea1af3f464d46942d9cdcd4e9357
     OriginalKeywords: GEOM_TYPE_BRANCH MOCHIE_PBR POI_AL_DECAL POI_AUDIOLINK POI_EMISSION_1
       POI_LTCGI PROP_LIGHTINGAOMAPS VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_REALISTIC
       _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _STYLIZEDREFLECTIONMODE_UNITYCHAN

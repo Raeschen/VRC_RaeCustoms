@@ -8,11 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blue Dragon RearPreview Poiyomi+Tally+AL+VidTex
-  m_Shader: {fileID: 4800000, guid: b591247cfbc55f440b9f93a0370ede79, type: 3}
+  m_Shader: {fileID: 4800000, guid: e9f30272e2d12c945851329f504df73d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - GEOM_TYPE_BRANCH
   - MOCHIE_PBR
   - POI_AL_DECAL
@@ -27,12 +26,12 @@ Material:
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   - _STYLIZEDREFLECTIONMODE_UNITYCHAN
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 6a2eea1af3f464d46942d9cdcd4e9357,d35fdefc5e21dac429903a8c11ffae8a
     OriginalKeywords: GEOM_TYPE_BRANCH MOCHIE_PBR POI_AL_DECAL POI_AUDIOLINK POI_EMISSION_1
       POI_LTCGI PROP_LIGHTINGAOMAPS VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_REALISTIC
       _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _STYLIZEDREFLECTIONMODE_UNITYCHAN
@@ -41,13 +40,6 @@ Material:
     RenderType: Opaque
     _EmissionColor1Animated: 1
     _EmissionStrength1Animated: 1
-    _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
-    _stripped_tex__DistortionFlowTexture: 07f0a54a3a4e7754eabc8ced70d7b30c
-    _stripped_tex__DistortionFlowTexture1: 70cd704e7a9550241b8a8b51fffc1a68
-    _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
-    _stripped_tex__TextGlyphs: bb52cc9d00ce83f49a4c555ae9ceeb45
-    _stripped_tex__ToonRamp: 61bd594533da4fc42bd46ef93ba5a4f6
-    thry_locked_rename_suffix: BlueDragonRearPreviewPoiyomi2BTally2BAL2BVidTex
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -123,6 +115,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ClearCoatMaps:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClothDFG:
+        m_Texture: {fileID: 2800000, guid: 76d65cbce584df7449699fb8406f60ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ClothMetallicSmoothnessMap:
@@ -203,6 +199,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DissolveToTexture:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionFlowTexture:
+        m_Texture: {fileID: 2800000, guid: 07f0a54a3a4e7754eabc8ced70d7b30c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionFlowTexture1:
+        m_Texture: {fileID: 2800000, guid: 70cd704e7a9550241b8a8b51fffc1a68, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionMask:
@@ -565,12 +569,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SkinLUT:
+        m_Texture: {fileID: 2800000, guid: d13510bb2be49aa40a66a0101efb6a36, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SkinThicknessMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextGlyphs:
+        m_Texture: {fileID: 2800000, guid: bb52cc9d00ce83f49a4c555ae9ceeb45, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToonRamp:
+        m_Texture: {fileID: 2800000, guid: 61bd594533da4fc42bd46ef93ba5a4f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TruchetMask:
@@ -3054,7 +3070,7 @@ Material:
     - _Set_RimLightMaskChannel: 1
     - _Set_RimLightMaskUV: 0
     - _ShadeColor_Step: 0
-    - _ShaderOptimizerEnabled: 1
+    - _ShaderOptimizerEnabled: 0
     - _ShaderUIWarning0: -0
     - _ShaderUIWarning1: -0
     - _ShadingEnabled: 1
