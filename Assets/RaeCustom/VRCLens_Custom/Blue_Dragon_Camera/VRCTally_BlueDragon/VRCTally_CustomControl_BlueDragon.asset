@@ -19,28 +19,52 @@ MonoBehaviour:
     saved: 1
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCTally_Heartbeat
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCTally_Program
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCTally_Preview
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCTally_Standby
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
   - name: VRCTally_Error
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
+    bitWidth: 1
+    useCustomLerpDuration: 0
+    customLerpDuration: 0
+    flippedRepresentation: 0
