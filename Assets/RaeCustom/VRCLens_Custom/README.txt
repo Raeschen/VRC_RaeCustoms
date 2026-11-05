@@ -143,7 +143,7 @@ Steps:
 2) Navigate to "<avatar>/VRCLens/WorldC/CamPickup/CamBase"
 3.1) On Object CamBase, Locate the Parent constraint.
 3.1.1) By default, this parent constraint has THREE Sources.
-3.1.2) Add a FOURTH(4th) Source.
+3.1.2) Add a FOURTH(4th) Source. IMPORTANT: USE THE '+' BUTTON to properly add the constraint offset data. DON'T increment the constraint count number manually.
 3.1.3) Set the FOURTH(4th) source WEIGHT to 0
 3.1.4) Set the FOURTH(4th) source to "<avatar>/RaeCustom_VRCLens_RootMount/RootMount/RootMount_Offset/RootMount_PhysRoot/RootMount_CamBase"
 4) If you wish to customise the rootmount's mount position, edit the position of "<avatar>/RaeCustom_VRCLens_RootMount/RootMount/RootMount_Offset" to wherever you like.
@@ -189,7 +189,7 @@ Steps:
 2) Navigate to "<avatar>/VRCLens/WorldC/CamPickup/CamBase"
 3.1) On Object CamBase, Locate the Parent constraint.
 3.1.1) By default, this parent constraint has THREE(3) Sources. If already using RootMount, it'll have FOUR(4) sources.
-3.1.2) Add a FOURTH(4th) Source (If it doesn't exist) AND a FIFTH(5th) source.
+3.1.2) Add a FOURTH(4th) Source (If it doesn't exist) AND a FIFTH(5th) source. IMPORTANT: USE THE '+' BUTTON to properly add the constraint offset data. DON'T increment the constraint count number manually.
 3.1.3) Set the FOURTH(4th) and FIFTH(5th) source WEIGHT both to 0
 3.1.4) Leave the FOURTH(4th) source either unset or set to RootMount if used.
 3.1.4) Set the FIFTH(5th) source to "<avatar>/RaeCustom_VRCLens_OSCController/OSCC_root/OSCC_Base/OSCC_CamBase"
@@ -206,7 +206,7 @@ Note: Check "Quick Checklist" at the top of this README if you're re-applying VR
 1) Parent preview screen to Camera instead of Hand
 - Want the Camera's preview to stay stuck to the camera mesh instead of your hand? 
 -- Navigate to GameObject: <avatar>/VRCLens/WorldC/CamPickupAlways
--- Add a source to the existing Parent Constraint on this object (Below source DynVR)
+-- Add a source to the existing Parent Constraint on this object (Below source DynVR). IMPORTANT: USE THE '+' BUTTON to properly add the constraint offset data. DON'T increment the constraint count number manually.
 -- Set the source to: <avatar>/VRCLens/WorldC/CamPickup/CamBase/CamObject
 -- Set the source strength value of "DynVR" to 0
 -- Set the source strength value of "CamObject" to 1
